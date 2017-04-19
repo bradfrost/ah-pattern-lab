@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    #FOOTER NAVIGATION
+\*------------------------------------*/
+
+/**
+ * 1) Navigation within the footer
+ */
+.ah_c__footer-nav {
+	display: flex;
+	font-size: $font-size-sm;
+}
+
+/**
+ * Footer navigation link
+ */
+.ah_c__footer-nav__link {
+	display: block;
+	padding: 1rem 1rem 0.5rem;
+	line-height: 1;
+	color: $color-gray-60;
+
+	&:hover, &:focus {
+		color: $color-gray-73;
+	}
+}

@@ -1,0 +1,10 @@
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+
+/**
+ * Text underline for links using box shadow
+ */
+@mixin textUnderline($color: $color-gray-13) {
+    box-shadow: inset 0 -1px 0 $color;
+}

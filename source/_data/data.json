@@ -1,0 +1,55 @@
+{
+	"title" : "athenahealth",
+	"company" : {
+		"name" : "athenahealth",
+		"url" : "http://athenahealth.com",
+		"tagline" : "Unbreak healthcare"
+	},
+	"user" : {
+		"isLoggedIn" : true,
+		"isLoggedOut" : false,
+		"name" : "Thisisauser Withaverylongname",
+		"username" : "thisisalongusernamenamename",
+		"avatar" : "../../images/avatar.png",
+		"bio" : "I am a web designer, speaker, writer, consultant, musician, and artist in beautiful Pittsburgh, PA. Author of Atomic Design. Married to the lovely @minifrost."
+	},
+	"date" : "Jan 22, 2017",
+	"label" : "Label",
+	"cta" : "Call to Action",
+	"listHeading": "List Heading",
+	"value" : "",
+	"placeholder" : "",
+	"alert" : {
+		"class" : "",
+		"text":	"Lorem ipsum dolor sit <a href='#'>This is a link.</a>",
+		"alertButton" : {
+			"styleModifier" : "c-btn--tiny c-btn--opaque js-alert-btn",
+			"buttonText" : "x"
+		}
+	},
+	"listSettings" : false,
+	"listTitlePlaceholder" : "Your List Title",
+	"list" : {
+		"title" : "List Title",
+		"createdBy" : 13,
+		"shortID" : "wl3l4ef4",
+		"type" : "unordered",
+		"tags" : [],
+		"content" : []
+	},
+	"headline" : {
+		"short" : "Lorem ipsum dolor sit (37 characters)",
+		"medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)"
+	},
+	"excerpt" : {
+		"short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+		"long" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	},
+	"url" : "#",
+	"buttonTag" : true,
+	"buttonText" : "Button",
+	"heading" : "Heading",
+	"pageSubheading" : "Subheading",
+	"htmlText" : "<h1>Heading 1</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam necessitatibus reprehenderit ipsum repellat quasi ratione sit possimus eveniet, ea, ut mollitia repudiandae eligendi unde aperiam molestiae voluptatibus error. Dolorem, iure.</p><p>Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipiscing elit. Integer fringilla sem a urna porttitor fringilla. Nulla eget justo felis. eget volutpat justo mattis nec. Sed a orci turpis. Aliquam aliquet placerat dui.</p>"
+}

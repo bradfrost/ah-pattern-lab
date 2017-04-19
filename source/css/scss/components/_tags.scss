@@ -1,0 +1,119 @@
+/*------------------------------------*\
+    #TAGS
+\*------------------------------------*/
+
+/**
+ * 1) Keywords that contain an anchor for lists
+ */
+.ah_c__tags {
+	border: 1px solid $color-gray-13;
+	border-radius: $border-radius;
+    min-height: 60px;
+    transition: all .25s;
+    cursor: text;
+    position: relative;
+	max-height: 10em;
+	overflow: auto;
+}
+
+.ah_c__tag {
+	display: inline;
+	background: $color-gray-13;
+}
+
+
+/*------------------------------------*\
+    #TAGGLE
+\*------------------------------------*/
+/**
+ * Styling for the taggle plugin (taggle.js)
+ */
+
+ /**
+  * List item within the taggle list
+  */
+.taggle {
+ 	display: flex;
+ 	position: relative;
+ 	width: auto;
+ 	margin: 0 0.3em 0.3em 0;
+ }
+
+ /**
+  * Taggle text
+  * 1) Text within the taggle list item once created
+  */
+.taggle_text {
+	 border: solid 1px #ddd;
+	 border-radius: $border-radius 0 0 $border-radius;
+	 padding: 0.2em 0.5em;
+	 word-break: break-word;
+ }
+
+ /**
+  * Close button (only use for taggle)
+  */
+.close {
+	/**
+	 * Close button within taggle tag
+	 */
+	 .taggle & {
+		 position: relative;
+		 background: $color-white;
+		 border: 1px solid $color-gray-13;
+		 border-left: 0;
+		 border-radius: 0 $border-radius $border-radius 0;
+		 padding: 0.2em 0.5em;
+		 top: 0;
+		 cursor: pointer;
+		 transition: background $fade-quick ease;
+
+		 &:hover {
+			 background: $color-gray-13;
+		 }
+	 }
+ }
+
+ /**
+  * Taggle input
+  * Where the tags actually get written
+  */
+.taggle_input {
+	border: 0;
+	outline: none;
+	width: 100% !important;
+	padding: 0.4em 0.6em;
+}
+
+/**
+ * Taggle placeholder text
+ */
+.taggle_placeholder {
+	margin: 0.6em 0.8em;
+	position: absolute;
+}
+
+/**
+ * Taggle sizer
+ * Contains the text being written in the taggle input
+ */
+.taggle_sizer {
+	display: none;
+}
+
+/**
+ * Taggle list
+ */
+.taggle_list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.3em;
+
+	/**
+	 * List item within taggle list that is not taggle
+	 */
+	li:not(.taggle) {
+		flex: 1;
+		min-width: 3em;
+	}
+}

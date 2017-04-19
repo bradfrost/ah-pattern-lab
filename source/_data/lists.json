@@ -1,0 +1,238 @@
+{
+	"settingsButton" : {
+		"styleModifier" : "c-btn--bare c-list-settings__btn js-settings-trigger",
+		"buttonIcon" : "chevron-down",
+		"buttonIsToggle" : {
+			"buttonIconSwap" : "#chevron-up"
+		},
+		"buttonText" : false,
+		"buttonTitle" : "list share"
+	},
+	"lis" : [
+		{
+			"liText" : "Item 1"
+		},
+		{
+			"liText" : "Item 2"
+		},
+		{
+			"liText" : "Item 3"
+		}
+	],
+	"signup" : {
+		"inputs" : [
+			{
+				"placeholder" : "placeholder text"
+			},
+			{
+				"placeholder" : "placeholder text"
+			},
+			{
+				"placeholder" : "placeholder text"
+			}
+		]
+	},
+	"login" : {
+		"listHeading" : "Log in to athenahealth",
+		"url" : "link.pages-dashboard",
+		"inputs" : [
+			{
+				"placeholder" : "placeholder text"
+			},
+			{
+				"placeholder" : "placeholder text"
+			}
+		]
+	},
+	"tabsShare" : {
+		"label" : "share this list",
+		"type" : "text",
+		"value" : "http://athenahealth/",
+		"listID" : true,
+		"styleModifier" : "js-list-settings-input",
+		"buttonModifier" : "c-list-settings__copybtn js-list-settings-copy",
+		"buttonText" : "copy link"
+	},
+	"tabsEmbed" : {
+		"label" : "embed this list",
+		"type" : "text",
+		"value": "<iframe src= 'http://athenahealth/embed/",
+		"listID" : true,
+		"valueEmbed" : "'></iframe>",
+		"styleModifier" : "js-list-settings-input",
+		"buttonModifier" : "c-list-settings__copybtn js-list-settings-copy",
+		"buttonText" : "copy"
+	},
+	"listEditable" : false,
+	"tabsActive" : true,
+	"tabsToggle" : {
+		"label" : "list type"
+	},
+	"tabsSelect" : {
+		"label" : "collections",
+		"selectOptions" : [
+			{
+				"value" : "collection",
+				"option" : "Choose a Collection"
+			},
+			{
+				"value" : "Animals",
+				"option" : "Types of animals"
+			},
+			{
+				"value" : "cars",
+				"option" : "Types of Cars"
+			},
+			{
+				"value" : "new",
+				"option" : "Add New Collection"
+			}
+		]
+	},
+	"tabsDelete" : {
+		"styleModifier" : "c-text-btn--error js-list-settings-delete",
+		"buttonText" : "Delete this list"
+    },
+	"popular" : {
+		"lists" : [
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--reversed"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--unordered"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--unordered"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--ordered"
+			}
+		]
+	},
+	"collections" : {
+		"lists" : [
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--ordered"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--reversed"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--unordered"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--reversed"
+			}
+		]
+	},
+	"lists" : {
+		"lists" : [
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--reversed"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--unordered"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--ordered"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--ordered"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--unordered"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--unordered"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--ordered"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--reversed"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--reversed"
+			},
+			{
+				"listClass" : "c-list--small",
+				"styleModifier" : "c-list__list--ordered"
+			}
+		]
+	},
+	"collection" : [
+		{
+			"lists" : [
+				{
+					"listClass" : "c-list--small",
+					"styleModifier" : "c-list__list--ordered"
+				},
+				{
+					"listClass" : "c-list--small",
+					"styleModifier" : "c-list__list--reversed"
+				},
+				{
+					"listClass" : "c-list--small",
+					"styleModifier" : "c-list__list--unordered"
+				}
+			]
+		},
+		{
+			"lists" : [
+				{
+					"listClass" : "c-list--small",
+					"styleModifier" : "c-list__list--ordered"
+				},
+				{
+					"listClass" : "c-list--small"
+				}
+			]
+		}
+	],
+	"settings" : {
+		"inputs" : [
+			{
+				"type" : "text",
+				"value" : "value"
+			},
+			{
+				"type" : "text",
+				"value" : "value"
+			},
+			{
+				"type" : "text",
+				"value" : "value"
+			},
+			{
+				"type" : "text",
+				"value" : "value"
+			}
+		]
+	},
+	"addNewListItemButton" : {
+		"styleModifier" : "c-btn--bare c-list__add-new-btn is-suppressed js-add-new-btn",
+		"buttonIcon" : "icon-plus",
+		"buttonText" : false,
+		"buttonTitle" : "add new list item"
+	},
+	"inputs" : [
+		{}
+	]
+}

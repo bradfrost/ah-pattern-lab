@@ -1,0 +1,83 @@
+/*------------------------------------*\
+    #LIST SETTINGS
+\*------------------------------------*/
+
+/**
+ * 1) Settings and Share panel for lists, activated by clicking a button
+ */
+.ah_c__list-settings {
+	position: absolute;
+	top: 7px; /* 1 */
+	left: 0;
+	z-index: 4;
+}
+
+/**
+ * Suppressed list settings
+ * 1) Hidden from user until something is typed in the list
+ */
+.ah_c__list-settings.is-suppressed {
+	visibility: hidden;
+	opacity: 0;
+}
+
+/**
+ * List settings button
+ * 1) The trigger that opens/closes the settings panel
+ * 2) Aligns the button with the title text
+ */
+.ah_c__list-settings__btn {
+	position: relative;
+	z-index: 1;
+	margin-top: 15px; /* 2 */
+	margin-right: 0.6rem;
+
+	/**
+	 * List settings button within sticky list header
+	 */
+	.ah_c__list__header.is-sticky & {
+		margin-top: 10px;
+	}
+
+	@media all and (min-width: $bp-med) {
+		margin-top: 20px; /* 2 */
+	}
+}
+
+
+/**
+ * List settings panel
+ * 1) Container that holds the settins and share tabs and content
+ */
+.ah_c__list-settings__panel {
+	background: $color-white;
+	border: 1px solid $color-gray-13;
+	border-radius: $border-radius;
+	display: none;
+	position: absolute;
+	margin-left: 1px;
+	top: 0;
+    left: $space-bullet-offset;
+	width: 16rem;
+
+	/**
+	 * Active list settings panel
+	 */
+	&.is-active {
+		display: block;
+	}
+
+	@media all and (min-width: 66.5em) {
+		left: -17rem;
+	}
+}
+
+/**
+ * List settings collection
+ */
+.ah_c__list-settings__collection {
+	border-color: $color-gray-13;
+	text-transform: lowercase;
+	width: 100%;
+	background: $color-white;
+}

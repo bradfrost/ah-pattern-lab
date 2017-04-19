@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #IMAGES
+\*------------------------------------*/
+
+/**
+ * 1) Specific images
+ */
+
+ /**
+  * Icon
+  */
+.ah_c__icon {
+	width: 16px;
+	height: 16px;
+}
+
+/**
+ * Avatar image
+ */
+.ah_c__avatar {
+
+	/**
+	 * Avatar image within a media block
+	 */
+	.ah_c__media-block & {
+		max-width: 100%;
+		height: auto;
+		border-radius: $border-radius;
+	}
+}

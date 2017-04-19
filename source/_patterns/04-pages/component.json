@@ -1,0 +1,37 @@
+{
+	"signup" : {
+		"user" : {
+			"isLoggedIn" : false,
+			"isLoggedOut" : true
+		},
+		"listHeading" : "Sign up to athenahealth",
+		"url" : "link.pages-dashboard-new-user",
+		"inputs" : [
+			{
+				"id" : "profile-name",
+				"type" : "text",
+				"label" : "your Username",
+				"value" : "",
+				"placeholder" : "yourusername",
+				"required" : true
+			},
+			{
+				"id" : "profile-email",
+				"type" : "email",
+				"label" : "Email",
+				"value" : "",
+				"placeholder" : "your email address",
+				"required" : true
+			},
+			{
+				"id" : "profile-password",
+				"type" : "password",
+				"label" : "Password",
+				"value" : "",
+				"placeholder" : "your password",
+				"required" : true
+			}
+		],
+		"buttonText" : "sign up"
+	}
+}

@@ -1,0 +1,224 @@
+/*------------------------------------*\
+    #LIST
+\*------------------------------------*/
+
+/**
+ * 1) The list pattern is the over-arching container that holds the
+ *    list title, actions, meta information, the list itself, and so on.
+ */
+
+ /**
+  * List header
+  */
+ .ah_c__list {
+	margin-bottom: 2rem;
+ }
+
+/**
+ * List header
+ * 1) Align list title with bullets
+ */
+.ah_c__list__header {
+    background: $color-white;
+	padding: 0.5rem 0 0.5rem $space-bullet-offset; /* 1 */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+	margin-bottom: 0.5rem;
+
+	.ah_c__card &, .ah_c__iframe & {
+		padding: 0;
+		position: relative;
+	}
+}
+
+.ah_c__list__header.is-sticky {
+	box-shadow: 0 3px 2px -1px rgba(0,0,0,0.05);
+}
+
+/**
+ * List title
+ */
+.ah_c__list__title {
+	width: 100%;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+	display: inline;
+	transition: font-size $fade-quick ease-out;
+
+	/**
+	 * List title that appears in a small list
+	 */
+	.ah_c__list--small & {
+		font-size: 1.4em;
+		line-height: 1.1;
+	}
+
+	/**
+	 * List title within a sticky header
+	 * 1) Shrink the text when scrolling
+	 */
+	.ah_c__list__header.is-sticky & {
+		font-size: 1.8rem; /* 1 */
+	}
+
+    /**
+     * Link within list title
+     */
+    a {
+        color: $color-gray-93;
+        @include textUnderline();
+        animation: pulse 0.2s 1;
+
+        &:hover, &:focus {
+            color: $color-gray-73;
+            box-shadow: inset 0 -2px 0 $color-gray-27;
+        }
+    }
+}
+
+/**
+ * List title text
+ */
+.ah_c__list__title-text {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-bottom: 1px solid rgba(255,255,255,0);
+	z-index: 1;
+	transition: border-bottom-color $fade-quick ease-out;
+
+	/**
+	 * Contenteditable title text
+	 */
+	&[contenteditable] {
+		&:focus {
+			border-bottom-color: $color-gray-13;
+		}
+	}
+
+	/**
+	 * List title text that exists within a link
+	 * 1) This is so the underlines show up correctly
+	 */
+	.ah_c__list__title-link & {
+		display: inline; /* 1 */
+	}
+}
+
+/**
+ * List title placeholder
+ */
+.ah_c__list__title-placeholder {
+	position: absolute;
+	z-index: 0;
+	color: $color-gray-13;
+
+	/**
+	 * List title placeholder is vishidden
+	 */
+	&.is-vishidden {
+		display: none;
+	}
+}
+
+/**
+ * List meta
+ */
+.ah_c__list__meta {
+	font-size: $font-size-sm;
+	color: $color-gray-50;
+	margin-top: 0.2rem;
+
+	a {
+		color: $color-gray-50;
+
+		&:hover, &:focus {
+			color: $color-gray-73;
+		}
+	}
+}
+
+/**
+ * Actual list
+ */
+.ah_c__list__list {
+	font-size: 1.85rem;
+
+	/**
+	 * List within list small container
+	 */
+	.ah_c__list--small & {
+		font-size: 1.1em;
+	}
+}
+
+/**
+ * Ordered list
+ */
+.ah_c__list__list--ordered {
+	list-style: none;
+	counter-reset: li;
+}
+
+/**
+ * Reverse order list
+ */
+.ah_c__list__list--reversed {
+	list-style: none;
+	counter-reset: li;
+}
+
+/**
+ * Add new button
+ * Looks like a +
+ */
+.ah_c__list__add-new-btn {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/**
+ * Suppressed add new list item button
+ * 1) Hidden from user until something is typed in the list
+ */
+.ah_c__list__add-new-btn.is-suppressed {
+	visibility: hidden;
+	opacity: 0;
+
+}
+
+/**
+ * List footer
+ */
+.ah_c__list__footer {
+    margin: 1.7rem 0 0 $space-bullet-offset;
+}
+
+/**
+ * List save button
+ * 1) Button that allows you to save your list
+ */
+.ah_c__list__save-btn {
+    position: absolute;
+    left: -4rem;
+    top: 1rem;
+
+    /**
+     * List save button within sticky list header
+     */
+    .ah_c__list__header.is-sticky & {
+        top: 0.4rem;
+    }
+}
+
+/**
+ * List spacer
+ * 1) The list spacer is an element that bumps up the text
+ */
+.ah_c__list__spacer {
+	height: 20vh;
+}

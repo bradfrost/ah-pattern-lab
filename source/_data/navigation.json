@@ -1,0 +1,32 @@
+{
+    "navItems" : [
+        {
+            "label" : "Getting Started",
+            "url" : "link.pages-guideline"
+        },
+        {
+            "label" : "Guidelines",
+            "url" : "link.pages-guideline"
+        },
+        {
+            "label" : "Styles",
+            "url" : "link.pages-guideline"
+        },
+        {
+            "label" : "Components",
+            "url" : "link.pages-guideline"
+        },
+        {
+            "label" : "Workflows",
+            "url" : "link.pages-guideline"
+        },
+        {
+            "label" : "Tools",
+            "url" : "link.pages-guideline"
+        },
+        {
+            "label" : "Contributing",
+            "url" : "link.pages-guideline"
+        }
+    ]
+}

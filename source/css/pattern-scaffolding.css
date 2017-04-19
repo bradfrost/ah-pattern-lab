@@ -1,0 +1,150 @@
+/**
+ * This stylesheet is for styles you want to include only when displaying demo
+ * styles for grids, animations, color swatches, etc.
+ * These styles will not be your production CSS.
+ */
+#sg-patterns {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  max-width: 100%;
+  padding: 0 0.5em;
+}
+
+.demo-animate {
+  background: #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sg-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@supports (display: grid) {
+    .sg-colors {
+        display: grid;
+        grid-gap: 10px;
+		grid-template-columns: repeat(auto-fill, minmax(180px, 1fr) );
+    }
+}
+
+.sg-colors li {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  padding: 0.3em;
+  margin: 0 0.5em 0.5em 0;
+  min-width: 5em;
+  max-width: 14em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.sg-swatch {
+  display: block;
+  height: 4em;
+  margin-bottom: 0.3em;
+  border-radius: 5px;
+}
+
+.sg-label {
+  font-size: 90%;
+  line-height: 1;
+}
+
+.sg-pattern-example > .c-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.sg-pattern-example > .l-container {
+    margin: 0;
+}
+
+.sg-pattern-example > .l-container {
+    margin: 0;
+}
+
+.sg-pattern-example .c-list-settings__panel {
+    position: relative;
+    left: 2rem;
+    top: -1.5rem;
+}
+
+.sg-pattern-example > .c-list-item {
+    font-size: 1.85rem;
+}
+
+.sg-pattern-example > .c-alert {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.sg-pattern-example > .ah_c__alert:last-child {
+    margin-bottom: 0;
+}
+
+.ah_c__alert {
+    position: static;
+    margin: 0;
+    width: 100%;
+}
+
+/**
+ * Icon grid
+ */
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr) );
+}
+
+/**
+ * Icon grid item
+ */
+.icon-grid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 5.5rem;
+    height: 5.5rem;
+    background: #f5f5f5;
+    border: 1px solid #cccccd;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+/**
+ * Icon grid item title
+ */
+.icon-grid__item h3 {
+    font-size: 0.6rem;
+    margin-top: 1rem;
+ }
+
+/**
+* Icon grid item svg
+*/
+.icon-grid__item svg {
+    height: 16px;
+    width: 16px;
+}
+
+.fpo-block {
+    padding: 0.5rem;
+    background: #f5f5f5;
+}
+
+.fpo-block--dark {
+    background: #808080;
+}

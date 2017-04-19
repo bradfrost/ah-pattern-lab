@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+
+/**
+ * 1) Global block at the bottom of each page that contains a navigation and other information
+ */
+.ah_c__footer {
+	text-align: center;
+	display: flex;
+	text-transform: lowercase;
+	opacity: 0.5;
+	transition: opacity $fade-quick ease-out;
+
+	&:hover, &:focus {
+		opacity: 1;
+	}
+}

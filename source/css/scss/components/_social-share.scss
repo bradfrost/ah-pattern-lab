@@ -1,0 +1,85 @@
+/*------------------------------------*\
+    #SOCIAL SHARE
+\*------------------------------------*/
+
+/**
+ * Social share list
+ */
+.ah_c__social-share__list {
+  	display: flex;
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: solid 1px $color-gray-13;
+	border-radius: $border-radius;
+}
+
+/**
+ * Social share list item
+ */
+.ah_c__social-share__item {
+    flex: 1 0 25%;
+}
+
+/**
+ * Link within a social share list
+ */
+.ah_c__social-share__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-right: solid 1px $color-gray-13;
+    box-shadow: 0;
+    transition: border-color 0.2s ease;
+
+    /**
+     * Link within last social share item
+     */
+    .ah_c__social-share__item:last-child & {
+        border-right: 0;
+    }
+}
+
+/**
+ * Social share list icon
+ */
+.ah_c__social-share__icon {
+    display: block;
+    fill: $color-gray-60;
+    transition: all $fade-quick $anim-ease;
+
+    /**
+     * Social share list icon within social share link hovered/focused on
+     */
+    .ah_c__social-share__link:hover &, .ah_c__social-share__link:focus & {
+        fill: $color-gray-73;
+    }
+}
+
+/**
+ * Facebook link
+ * 1) Adjust the top so icon aligns with other social icons
+ */
+.ah_c__social-share__icon--facebook {
+    position: relative;
+    top: -2px;
+}
+
+/**
+ * Google Plus icon
+ * 1) Adjust the bottom so icon aligns with other social icons
+ */
+.ah_c__social-share__icon--gplus {
+    position: relative;
+}
+
+/**
+ * LinkedIn icon
+ * 1) Adjust the top so icon aligns with other social icons
+ */
+.ah_c__social-share__icon--linkedin {
+    position: relative;
+    top: -1px;
+}

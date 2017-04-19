@@ -1,0 +1,20 @@
+{
+	"user" : {
+		"isLoggedIn" : false,
+		"isLoggedOut" : true
+	},
+	"listEditable" : false,
+	"listHeading" : "This is athenahealth.",
+	"lis" : [
+		{ "liText" : "Make lists." },
+		{ "liText" : "Share lists." },
+		{ "liText" : "Have fun." }
+	],
+	"listCTA" : {
+		"buttonText" : "Make your first list",
+		"buttonTag" : false,
+		"linkTag" : {
+			"url" : "link.pages-list-new-new-user"
+		}
+	}
+}
