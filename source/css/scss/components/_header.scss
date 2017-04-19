@@ -63,6 +63,12 @@
 		width: 100%;
 		z-index: 5;
 		padding: 1rem;
+
+		@media all and (min-width: $bp-xl) {
+			display: block;
+			position: static;
+			padding: 0;
+		}
 	}
 
 	@media all and (min-width: $bp-xl) {
