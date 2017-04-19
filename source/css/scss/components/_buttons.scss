@@ -18,7 +18,6 @@
 	border: 0;
 	box-shadow: none; /* 2 */
 	text-align: center;
-	text-transform: lowercase;
 	transition: all $fade-quick ease-out;
 
 	&:hover, &:focus {
@@ -97,7 +96,7 @@
  * Small button
  */
 .ah_c__btn--small {
-    padding: 0.6rem;
+	padding: .375rem .75rem;
 }
 
 /*
