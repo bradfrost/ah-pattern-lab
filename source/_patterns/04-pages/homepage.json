@@ -12,9 +12,6 @@
 	],
 	"listCTA" : {
 		"buttonText" : "Make your first list",
-		"buttonTag" : false,
-		"linkTag" : {
-			"url" : "link.pages-list-new-new-user"
-		}
+		"buttonTag" : false
 	}
 }
