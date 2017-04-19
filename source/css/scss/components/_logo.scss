@@ -6,9 +6,7 @@
  * Branding image or text of the site
  */
 .ah_c__logo {
-	margin: 0;
-	font-size: $font-size-sm-2;
-	line-height: 1;
+	margin: 0 0 1rem;
 }
 
 /**
@@ -16,5 +14,4 @@
  */
 .ah_c__logo__link {
 	display: block;
-	padding: 1rem;
 }
