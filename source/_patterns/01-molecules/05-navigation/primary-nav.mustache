@@ -7,11 +7,11 @@
 
 			<a href="{{ url }}" class="ah_c__primary-nav__link {{# currentPage }}ah_is-current {{/ currentPage }}{{# navChild }} ah_c__primary-nav__link--has-children ah_js__nav-dropdown-trigger{{/ navChild }}">
 
-				{{ label }}
+				<span class="ah_c__primary-nav__text">{{ label }}</span>
 
 				{{# navChild }}
 				<svg class="ah_c__icon ah_c__primary-nav__icon">
-	            	<use href="{{ iconPath }}#icon-caret-down"></use>
+	            	<use href="{{ iconPath }}#{{ icon }}"></use>
 	          	</svg>
 				{{/ navChild }}
 			</a><!--end ah_c__primary-nav__link-->

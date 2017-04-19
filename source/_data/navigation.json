@@ -14,7 +14,15 @@
         },
         {
             "label" : "Components",
-            "url" : "link.pages-guideline"
+            "url" : "link.pages-guideline",
+            "icon" : "chevron-right",
+            "navChild" : {
+                "navChildList" : [
+                    {
+                        "label" : "Global"
+                    }
+                ]
+            }
         },
         {
             "label" : "Workflows",
