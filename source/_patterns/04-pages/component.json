@@ -5,7 +5,6 @@
 			"isLoggedOut" : true
 		},
 		"listHeading" : "Sign up to athenahealth",
-		"url" : "link.pages-dashboard-new-user",
 		"inputs" : [
 			{
 				"id" : "profile-name",

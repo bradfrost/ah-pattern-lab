@@ -34,7 +34,6 @@
 	},
 	"login" : {
 		"listHeading" : "Log in to athenahealth",
-		"url" : "link.pages-dashboard",
 		"inputs" : [
 			{
 				"placeholder" : "placeholder text"
