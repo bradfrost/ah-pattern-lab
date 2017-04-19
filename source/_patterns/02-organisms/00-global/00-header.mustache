@@ -1,6 +1,16 @@
 <header class="ah_c__header {{ headerStyleModifier }}" role="banner">
+	<div class="ah_c__header-inner">
 
 	{{> molecules-logo }}
-    {{> molecules-primary-nav }}
+
+	{{# navToggle }}
+	{{> atoms-button }}
+	{{/ navToggle }}
+
+	<div class="ah_c__header__nav-container ah_js-nav-panel">
+	    {{> molecules-primary-nav }}
+	</div>
+
+</div><!--end ah_c__header-inner-->
 
 </header><!--end ah_c__header-->

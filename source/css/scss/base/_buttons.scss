@@ -7,7 +7,6 @@
  * 1) These should be styled using c-btn
  */
 button, input[type=submit] {
-	text-transform: lowercase;
 	cursor: pointer;
 
 	&:focus {

@@ -1,4 +1,8 @@
 {
+    "navToggle" : {
+        "styleModifier" : "ah_c__header__nav-btn ah_js-nav-trigger",
+        "buttonText" : "Menu"
+    },
     "navItems" : [
         {
             "label" : "Getting Started",

@@ -1,13 +1,13 @@
 /*------------------------------------*\
-    #NAVIGATION
+    #PRIMARY NAVIGATION
 \*------------------------------------*/
 
 /**
- * Navigation
+ * Primary navigation
  */
 
 /**
- * Navigation list
+ * Primary navigation list
  */
 .ah_c__primary-nav__list {
 	display: flex;
@@ -21,14 +21,14 @@
 }
 
 /**
- * Navigation item
+ * Primary navigation item
  */
 .ah_c__primary-nav__item {
 	position: relative;
 }
 
 /**
- * Navigation link
+ * Primary navigation link
  */
 .ah_c__primary-nav__link {
 	display: block;
@@ -37,12 +37,12 @@
 }
 
 /**
- * Navigation link with subnavigation
+ * Primary navigation link with subnavigation
  */
 .ah_c__primary-nav__link--has-children {
 
 	/**
-	 * Primary nav link that has children within a vertical header
+	 * Primary navigation link that has children within a vertical header
 	 */
 	.ah_c__header--vertical & {
 		display: flex;
@@ -51,7 +51,7 @@
 }
 
 /**
- * Navigation list subnavigation
+ * Primary navigation list subnavigation
  * 1) Width of dropdown is an aesthetic choice and aligns the
  *    dropdown with the adjacent nav item.
  */
@@ -89,19 +89,22 @@
 	}
 
 	/**
-	 * Primary nav icon within vertical header
+	 * Primary navigation icon within vertical header
 	 */
 	.ah_c__header--vertical & {
 		margin-left: auto;
 	}
 
 	/**
-	 * Primary nav icon within active link
+	 * Primary navigation icon within active link
 	 */
 	.ah_c__primary-nav__item.ah_is-active & {
 		transform: rotate(90deg);
 	}
 
+	/**
+	 * Primary navigation icon within hovered/focused primary navigation link
+	 */
 	.ah_c__primary-nav__link:hover &, .ah_c__primary-nav__link:focus & {
 		fill: $color-gray-50;
 	}
