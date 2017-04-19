@@ -52,36 +52,14 @@
 
 
 /*------------------------------------*\
-    #PAGE STRUCTURE
-\*------------------------------------*/
-@import "scss/components/header";
-@import "scss/components/nav";
-@import "scss/components/footer";
-
-
-
-
-
-/*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
 @import "scss/components/buttons";
-@import "scss/components/breadcrumbs";
-@import "scss/components/card";
-@import "scss/components/credit";
-@import "scss/components/fields";
-@import "scss/components/forms";
 @import "scss/components/footer-nav";
-@import "scss/components/forms";
-@import "scss/components/images";
-@import "scss/components/inputs";
+@import "scss/components/footer";
+@import "scss/components/header";
 @import "scss/components/logo";
-@import "scss/components/media-block";
-@import "scss/components/page-header";
-@import "scss/components/sections";
-@import "scss/components/alert";
-@import "scss/components/tabs";
-@import "scss/components/tags";
+@import "scss/components/primary-nav";
 @import "scss/components/text-passage";
 
 
