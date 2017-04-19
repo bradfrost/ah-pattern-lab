@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+/**
+ * Global block at the top of each page containing the navigation, logo, and other potential contents
+ */
+.ah_c__header {
+	display: flex;
+	padding: 1rem;
+	background: $color-gray-07;
+}
+
+.ah_c__header--vertical {
+
+	@media all and (min-width: $bp-xl) {
+		flex-direction: column;
+	    min-height: 100vh;
+	}
+
+}
