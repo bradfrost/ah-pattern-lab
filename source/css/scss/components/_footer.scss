@@ -8,11 +8,7 @@
 .ah_c__footer {
 	text-align: center;
 	display: flex;
-	text-transform: lowercase;
-	opacity: 0.5;
-	transition: opacity $fade-quick ease-out;
-
-	&:hover, &:focus {
-		opacity: 1;
-	}
+    border-top: 1px solid $color-gray-07;
+    padding: 1rem 0;
+    margin-top: 1rem;
 }
