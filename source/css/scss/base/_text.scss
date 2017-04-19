@@ -25,8 +25,8 @@ hr {
  * Selection styles
  */
 ::-moz-selection {
-  background: $color-brand-purple; /* Gecko Browsers */
+  background: $color-gray-13; /* Gecko Browsers */
 }
 ::selection {
-  background: $color-brand-purple; /* WebKit/Blink Browsers */
+  background: $color-gray-13; /* WebKit/Blink Browsers */
 }
