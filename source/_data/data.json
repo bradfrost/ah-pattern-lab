@@ -5,6 +5,10 @@
 		"url" : "http://athenahealth.com",
 		"tagline" : "Unbreak healthcare"
 	},
+    "designSystem" : {
+        "name" : "Arachnophobia",
+        "url" : "http://designsystem.athenahealth.com"
+    },
 	"user" : {
 		"isLoggedIn" : true,
 		"isLoggedOut" : false,
