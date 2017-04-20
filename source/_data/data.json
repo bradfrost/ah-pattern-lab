@@ -6,16 +6,14 @@
 		"tagline" : "Unbreak healthcare"
 	},
     "designSystem" : {
-        "name" : "Arachnophobia",
+        "name" : "Agoraphobia",
         "url" : "http://designsystem.athenahealth.com"
     },
 	"user" : {
 		"isLoggedIn" : true,
 		"isLoggedOut" : false,
 		"name" : "Thisisauser Withaverylongname",
-		"username" : "thisisalongusernamenamename",
-		"avatar" : "../../images/avatar.png",
-		"bio" : "I am a web designer, speaker, writer, consultant, musician, and artist in beautiful Pittsburgh, PA. Author of Atomic Design. Married to the lovely @minifrost."
+		"username" : "thisisalongusernamenamename"
 	},
 	"page" : {
 		"title" : "Page Title",
@@ -24,27 +22,8 @@
 	"date" : "Jan 22, 2017",
 	"label" : "Label",
 	"cta" : "Call to Action",
-	"listHeading": "List Heading",
 	"value" : "",
 	"placeholder" : "",
-	"alert" : {
-		"class" : "",
-		"text":	"Lorem ipsum dolor sit <a href='#'>This is a link.</a>",
-		"alertButton" : {
-			"styleModifier" : "c-btn--tiny c-btn--opaque js-alert-btn",
-			"buttonText" : "x"
-		}
-	},
-	"listSettings" : false,
-	"listTitlePlaceholder" : "Your List Title",
-	"list" : {
-		"title" : "List Title",
-		"createdBy" : 13,
-		"shortID" : "wl3l4ef4",
-		"type" : "unordered",
-		"tags" : [],
-		"content" : []
-	},
 	"headline" : {
 		"short" : "Lorem ipsum dolor sit (37 characters)",
 		"medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)"
