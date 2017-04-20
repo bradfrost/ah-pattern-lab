@@ -1,36 +1,64 @@
 {
-	"signup" : {
-		"user" : {
-			"isLoggedIn" : false,
-			"isLoggedOut" : true
-		},
-		"listHeading" : "Sign up to athenahealth",
-		"inputs" : [
+	"page" : {
+		"title" : "Component Title",
+		"description" : "This is the component description. It will briefly describe the component."
+	},
+	"liveTabs" : {
+		"styleModifier" : "ah_c__tabs--vertical",
+		"tabs" : [
 			{
-				"id" : "profile-name",
-				"type" : "text",
-				"label" : "your Username",
-				"value" : "",
-				"placeholder" : "yourusername",
-				"required" : true
+				"id" : "component-1",
+				"label" : "Component 1",
+				"tabsText" : {
+					"htmlText" : "Component 1 Pattern"
+				}
 			},
 			{
-				"id" : "profile-email",
-				"type" : "email",
-				"label" : "Email",
-				"value" : "",
-				"placeholder" : "your email address",
-				"required" : true
+				"id" : "component-2",
+				"label" : "Component 2",
+				"tabsText" : {
+					"htmlText" : "Component 2 Content"
+				}
 			},
 			{
-				"id" : "profile-password",
-				"type" : "password",
-				"label" : "Password",
-				"value" : "",
-				"placeholder" : "your password",
-				"required" : true
+				"id" : "component-3",
+				"label" : "Component 3",
+				"tabsText" : {
+					"htmlText" : "Component 3 Content"
+				}
+			},
+			{
+				"id" : "component-4",
+				"label" : "Component 4",
+				"tabsText" : {
+					"htmlText" : "Component 4 Content"
+				}
 			}
-		],
-		"buttonText" : "sign up"
+		]
+	},
+	"codeTabs" : {
+		"tabs" : [
+			{
+				"id" : "html-1",
+				"label" : "HTML",
+				"tabsText" : {
+					"htmlText" : "HTML Code"
+				}
+			},
+			{
+				"id" : "jsx-1",
+				"label" : "JSX",
+				"tabsText" : {
+					"htmlText" : "JSX Code"
+				}
+			},
+			{
+				"id" : "twig-1",
+				"label" : "Twig",
+				"tabsText" : {
+					"htmlText" : "Twig Code"
+				}
+			}
+		]
 	}
 }

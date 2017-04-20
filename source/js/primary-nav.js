@@ -8,44 +8,48 @@
  * 3) If the nav dropdown trigger parent already has active class, remove it.
  * 4) If the nav dropdown trigger parent does not have an active class, add it.
  */
-var navLink = document.querySelectorAll('.ah_js__nav-dropdown-trigger'); /* 1 */
+(function(){
 
-for (i=0; i<navLink.length; i++) { /* 1 */
+	var navLink = document.querySelectorAll('.ah_js__nav-dropdown-trigger'); /* 1 */
 
-	navLink[i].addEventListener('click',function(event){ /* 2 */
-        event.preventDefault();
-        var navLinkParent = this.parentNode; /* 2 */
+	for (i=0; i<navLink.length; i++) { /* 1 */
 
-        if (navLinkParent.classList.contains('ah_is-active')) { /* 3 */
-            navLinkParent.classList.remove('ah_is-active');
-        }
-        else { /* 4 */
-            navLinkParent.classList.add('ah_is-active');
-        }
-	});
-}
+		navLink[i].addEventListener('click',function(event){ /* 2 */
+	        event.preventDefault();
+	        var navLinkParent = this.parentNode; /* 2 */
 
-/**
- * Toggles active class on the primary nav panel
- * 1) Select all nav triggers and cycle through them
- * 2) On click, find the nav panel within the header
- * 3) If the navPanel already has active class, remove it on click.
- * 4) If the navPanel does not have an active class, add it on click.
- */
-var navToggle = document.querySelectorAll('.ah_js-nav-trigger');/* 1 */
+	        if (navLinkParent.classList.contains('ah_is-active')) { /* 3 */
+	            navLinkParent.classList.remove('ah_is-active');
+	        }
+	        else { /* 4 */
+	            navLinkParent.classList.add('ah_is-active');
+	        }
+		});
+	}
 
-for (i=0; i<navToggle.length; i++) { /* 1 */
+	/**
+	 * Toggles active class on the primary nav panel
+	 * 1) Select all nav triggers and cycle through them
+	 * 2) On click, find the nav panel within the header
+	 * 3) If the navPanel already has active class, remove it on click.
+	 * 4) If the navPanel does not have an active class, add it on click.
+	 */
+	var navToggle = document.querySelectorAll('.ah_js-nav-trigger');/* 1 */
 
-	navToggle[i].addEventListener('click',function(event){ /* 2 */
-        event.preventDefault();
-        var navToggleParent = this.parentNode; /* 2 */
-        var navPanel = navToggleParent.querySelector('.ah_js-nav-panel'); /* 2 */
+	for (i=0; i<navToggle.length; i++) { /* 1 */
 
-        if (navPanel.classList.contains('ah_is-active')) { /* 3 */
-            navPanel.classList.remove('ah_is-active');
-        }
-        else { /* 4 */
-            navPanel.classList.add('ah_is-active');
-        }
-	});
-}
+		navToggle[i].addEventListener('click',function(event){ /* 2 */
+	        event.preventDefault();
+	        var navToggleParent = this.parentNode; /* 2 */
+	        var navPanel = navToggleParent.querySelector('.ah_js-nav-panel'); /* 2 */
+
+	        if (navPanel.classList.contains('ah_is-active')) { /* 3 */
+	            navPanel.classList.remove('ah_is-active');
+	        }
+	        else { /* 4 */
+	            navPanel.classList.add('ah_is-active');
+	        }
+		});
+	}
+
+})();
