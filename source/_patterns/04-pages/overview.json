@@ -1,6 +1,6 @@
 {
 	"page" : {
 		"title" : "Overview Title",
-		"description" : "This is the overview description. It will give a summary of what the design system is made up of and how it is used."
+		"description" : "This is an overview page, which serves as an index page for each major section of the style guide. It will give a summary and provide links to each detail page in a section."
 	}
 }
