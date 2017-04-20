@@ -24,72 +24,6 @@
 		background: $color-black;
 		color: $color-white;
 	}
-
-	/*
-	 * Button within a page heading
-	 */
-	.ah_c__page-header & {
-		@media all and (min-width: 55em) {
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-	}
-
-	/*
-	 * Button within form actions
-	 */
-	.ah_c__form__actions & {
-		transition: opacity 0.4s ease-in-out, font-size 0.15s ease-in-out;
-	}
-}
-
-/**
- * Bare button
- * 1) A bare button is a button that doesn't have a colored background
- *   and is often used for
- */
-.ah_c__btn--bare {
-    background: $color-white;
-	padding: 0;
-
-    &:hover, &:focus {
-        background: $color-white;
-    }
-}
-
-/**
- * Loading Button
- */
-.ah_c__btn.is-loading {
-	background: $color-gray-50;
-
-	&:hover, &:focus {
-		background: $color-gray-50;
-	}
-}
-
-/**
- * Suppressed button
- * 1) Hides button
- */
-.ah_c__btn.is-suppressed {
-	visibility: hidden;
-	opacity: 0;
-}
-
-/*
- * Opaque button
- * 1) Used in alerts TODO
- */
-.ah_c__btn--opaque {
-	border: 0;
-    background: rgba(0,0,0,0.05);
-	transition: background .15s ease-in-out;
-
-	&:hover, &:focus {
-		background: rgba(0,0,0,0.1);
-	}
 }
 
 /**
@@ -97,63 +31,6 @@
  */
 .ah_c__btn--small {
 	padding: .375rem .75rem;
-}
-
-/*
- * Tiny button
- */
-.ah_c__btn--tiny {
-    padding: 2px 6px 3px;
-	font-size: $font-size-sm-2;
-    line-height: 1;
-
-	/*
-	 * Tiny button within alert
-	 */
-	.ah_c__alert & {
-		position: absolute;
-		color: $color-gray-73;
-		top: 0.22em;
-		right: 0.3em;
-		cursor: pointer;
-	}
-
-	/*
-	 * Tiny button within info alert
-	 */
-	.ah_c__alert--info & {
-		color: $color-utility-info;
-	}
-
-	/*
-	 * Tiny button within success alert
-	 */
-	.ah_c__alert--success & {
-		color: $color-utility-success;
-	}
-
-	/*
-	 * Tiny button within warning alert
-	 */
-	.ah_c__alert--warning & {
-		color: $color-utility-warning;
-	}
-
-	/*
-	 * Tiny button within errors alert
-	 */
-	.ah_c__alert--error & {
-		color: $color-utility-error;
-	}
-}
-
-/*
- * Block button
- * 1) Full-width button
- */
-.ah_c__btn--block {
-	display: block;
-    width: 100%;
 }
 
 /*
@@ -189,21 +66,8 @@
 	.ah_c__btn.is-active & {
 		fill: $color-black;
 	}
-
-	/*
-	 * Button icon within add new button
-	 */
-	.ah_c__list__add-new-btn & {
-		fill: $color-gray-13;
-	}
-
-	/*
-	 * Button icon within hovered:focused add new button
-	 */
-	.ah_c__list__add-new-btn:hover &, .ah_c__list__add-new-btn:focus & {
-		fill: $color-gray-50;
-	}
 }
+
 
 
 
@@ -222,13 +86,6 @@
 	text-transform: lowercase;
 	border-radius: $border-radius;
 	transition: background $fade-quick $anim-ease;
-
-	/**
-	 * Text button within a button group
-	 */
-	.ah_c__btn-group & {
-		margin-left: auto;
-	}
 }
 
 /**
@@ -241,14 +98,4 @@
 		color: $color-utility-error;
 		background: $color-utility-error-light;
 	}
-}
-
-/**
- * Button Group
- * 1) A button group consists of a primary and secondary
- */
-.ah_c__btn-group {
-	display: flex;
-    align-items: center;
-    width: 100%;
 }

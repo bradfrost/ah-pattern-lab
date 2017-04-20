@@ -16,11 +16,9 @@
 	 */
 	a {
 		color: $color-gray-50;
-		@include textUnderline();
 
 		&:hover, &:focus {
 			color: $color-gray-73;
-			box-shadow: inset 0 -2px 0 $color-gray-27;
 		}
 	}
 
