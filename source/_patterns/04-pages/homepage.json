@@ -1,4 +1,9 @@
 {
+	"hero" : {
+        "headline" : "Welcome to athenahealth's design system: Agoraphobia!",
+        "excerpt" : "Get started here",
+		"buttonText" : "Get Started"
+    },
 	"user" : {
 		"isLoggedIn" : false,
 		"isLoggedOut" : true

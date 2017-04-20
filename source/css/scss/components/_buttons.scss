@@ -24,6 +24,14 @@
 		background: $color-black;
 		color: $color-white;
 	}
+
+	/**
+	 * Button within hero
+	 */
+	.ah_c__hero & {
+		display: block;
+		margin-left: auto;
+	}
 }
 
 /**
