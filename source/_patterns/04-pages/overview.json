@@ -1,3 +1,6 @@
 {
-	
+	"page" : {
+		"title" : "Overview Title",
+		"description" : "This is the overview description. It will give a summary of what the design system is made up of and how it is used."
+	}
 }
