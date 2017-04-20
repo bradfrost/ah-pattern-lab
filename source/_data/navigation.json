@@ -23,7 +23,8 @@
             "navChild" : {
                 "navChildList" : [
                     {
-                        "label" : "Global"
+                        "label" : "Global",
+                        "url" : "link.pages-component"
                     }
                 ]
             }
