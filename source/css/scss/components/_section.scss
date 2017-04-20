@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    #SECTION
+\*------------------------------------*/
+
+/**
+ * Section block that helps chunk related items together
+ */
+.ah_c__section {
+	margin-bottom: 1rem;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #SECTION HEADER
+\*------------------------------------*/
+
+/**
+ * 1) Block containing section title and description to distinguish section
+ */
+.ah_c__section-header {
+	margin-bottom: 1rem;
+	border-bottom: 1px solid $color-gray-07;
+}
+
+/**
+ * Section header title
+ */
+.ah_c__section-header__title {
+	font-size: $font-size-large;
+}
+
+/**
+ * Section description
+ */
+.ah_c__section-header__desc {
+	font-size: $font-size-med;
+}

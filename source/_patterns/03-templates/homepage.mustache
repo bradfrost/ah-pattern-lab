@@ -14,13 +14,37 @@
 
                     {{> molecules-hero }}
 
-                    <div class="fpo-block">Getting started CTA</div>
+                    {{# benefitsSection }}
+                    <section class="ah_c__section">
 
-                    <div class="fpo-block">Benefits</div>
+                        {{> molecules-section-header }}
 
-                    <div class="fpo-block">App Gallery</div>
+                        <div class="ah_c__text-passage">
+                            {{{ htmlText }}}
+                        </div>
 
-                    <div class="fpo-block">Discussion/conversation/contributing</div>
+                    </section>
+                    {{/ benefitsSection }}
+
+                    {{# appGallerySection }}
+                    <section class="ah_c__section">
+
+                        {{> molecules-section-header }}
+
+                        <div class="fpo-block">App Gallery</div>
+
+                    </section>
+                    {{/ appGallerySection }}
+
+                    {{# contributeSection }}
+                    <section class="ah_c__section">
+
+                        {{> molecules-section-header }}
+                        
+                        <div class="fpo-block">Discussion/conversation/contributing</div>
+
+                    </section>
+                    {{/ contributeSection }}
 
             </main><!--end role=main-->
 

@@ -18,5 +18,24 @@
 	"listCTA" : {
 		"buttonText" : "Make your first list",
 		"buttonTag" : false
+	},
+	"benefitsSection" : {
+		"section" : {
+			"title" : "Benefits",
+			"description" : "These are the benefits of the design system."
+		},
+		"htmlText" : "<ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>"
+	},
+	"appGallerySection" :  {
+		"section" : {
+			"title" : "App Gallery",
+			"description" : "These are the applications currently using the design system"
+		}
+	},
+	"contributeSection" :  {
+		"section" : {
+			"title" : "Contribute",
+			"description" : "Get started creating your application with the design system"
+		}
 	}
 }
