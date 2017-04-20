@@ -1,0 +1,27 @@
+<div class="ah_c__tabs {{ styleModifier }} ah_js-tabs">
+
+	<ul class="ah_c__tabs__list">
+
+		{{# tabs }}
+		<li class="ah_c__tabs__item">
+			<a href="#{{ id }}" class="ah_c__tabs__link ah_js-tab">{{ label }}</a>
+		</li><!-- end ah_c__tabs__item -->
+		{{/ tabs }}
+
+	</ul><!-- end ah_c__tabs__list -->
+
+	<div class="ah_c__tabs__body {{ tabsModifier }}">
+
+		{{# tabs }}
+
+		<div class="ah_c__tabs__panel ah_js-tabs-panel" id="{{ id }}">
+			{{# tabsText }}
+			{{{ htmlText }}}
+			{{/ tabsText }}
+		</div>
+
+		{{/ tabs }}
+
+	</div><!-- end ah_c__tabs__body-->
+
+</div><!-- end ah_c__tabs -->
