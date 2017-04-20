@@ -1,0 +1,28 @@
+{
+    "tileList" : [
+        {
+            "tile" : {
+                "title" : "Application 1",
+                "description" : "Brief Application 1 description"
+            }
+        },
+        {
+            "tile" : {
+                "title" : "Application 2",
+                "description" : "Brief Application 2 description"
+            }
+        },
+        {
+            "tile" : {
+                "title" : "Application 3",
+                "description" : "Brief Application 3 description"
+            }
+        },
+        {
+            "tile" : {
+                "title" : "Application 4",
+                "description" : "Brief Application 4 description"
+            }
+        }
+    ]
+}

@@ -30,6 +30,9 @@
 		"section" : {
 			"title" : "App Gallery",
 			"description" : "These are the applications currently using the design system"
+		},
+		"tileSection" : {
+			"styleModifier" : "ah-l__abstract-grid"
 		}
 	},
 	"contributeSection" :  {

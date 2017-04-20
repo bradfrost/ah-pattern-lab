@@ -1,6 +1,10 @@
 {
     "hero" : {
         "headline" : "This is the hero",
-        "excerpt" : "This is the hero description that while describing the hero"
+        "excerpt" : "This is the hero description that will describe the contents of the hero"
+    },
+    "tile" : {
+        "title" : "Tile Title",
+        "description" : "This is a description of the tile."
     }
 }
