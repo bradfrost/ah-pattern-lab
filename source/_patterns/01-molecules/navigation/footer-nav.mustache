@@ -1,19 +1,9 @@
 <ul class="ah_c__footer-nav">
 
+    {{# footerNav }}
     <li class="ah_c__footer-nav__item">
-		<a href="#" class="ah_c__footer-nav__link">Support</a>
-	</li>
-
-	<li class="ah_c__footer-nav__item">
-		<a href="#" class="ah_c__footer-nav__link">Contributing</a>
-	</li>
-
-    <li class="ah_c__footer-nav__item">
-		<a href="#" class="ah_c__footer-nav__link">Release History &amp; Roadmap</a>
-	</li>
-
-	<li class="ah_c__footer-nav__item">
-		<a href="#" class="ah_c__footer-nav__link">Slack</a>
-	</li>
+		<a href="{{ url }}" class="ah_c__footer-nav__link">{{ label }}</a>
+	</li><!--end ah_c__footer-nav__item-->
+    {{/ footerNav }}
 
 </ul><!--end ah_c__footer-nav-->
