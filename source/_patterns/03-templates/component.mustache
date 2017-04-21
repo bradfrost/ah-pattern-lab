@@ -2,9 +2,7 @@
 
     <div class="ah_l_secondary">
 
-        {{# styleGuideHeader }}
-        {{> organisms-header }}
-        {{/ styleGuideHeader }}
+        {{> organisms-header:ah_c_header--vertical }}
 
     </div><!--end ah_l_secondary-->
 
@@ -24,9 +22,27 @@
                     {{> organisms-tabs}}
                     {{/ codeTabs }}
 
-                    <div class="fpo-block">Usage Guidelines (Do's, Dont's, Considerations, Alternatives, Resources)</div>
+                    {{# usageSection }}
+                    <section class="ah_c_section">
 
-                    <div class="fpo-block">Live site examples</div>
+                        {{> molecules-section-header }}
+
+                        <div class="ah_c_text-passage">
+                            {{{ htmlText }}}
+                        </div>
+
+                    </section>
+                    {{/ usageSection }}
+
+                    {{# exampleSection }}
+                    <section class="ah_c_section">
+
+                        {{> molecules-section-header }}
+
+                        {{> molecules-link-list }}
+
+                    </section>
+                    {{/ exampleSection }}
 
                     <div class="fpo-block">Detailed class description</div>
 

@@ -60,5 +60,36 @@
 				}
 			}
 		]
+	},
+	"usageSection" :  {
+		"section" : {
+			"title" : "Usage Guidelines",
+			"description" : "These are the usage guidelines for the design system."
+		},
+		"htmlText" : "<h3>When To Use</h3><p>Use this pattern like this. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><h3>Principles and Guidelines</h3><p>Here are the principles and guidelines for the component. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+	},
+	"exampleSection" :  {
+		"section" : {
+			"title" : "Real-life Examples",
+			"description" : "This pattern is featured in these different applications."
+		},
+		"linkList" : [
+			{
+				"url" : "#",
+				"label" : "Application 1"
+			},
+			{
+				"url" : "#",
+				"label" : "Application 2"
+			},
+			{
+				"url" : "#",
+				"label" : "Application 3"
+			},
+			{
+				"url" : "#",
+				"label" : "Application 4"
+			}
+		]
 	}
 }
