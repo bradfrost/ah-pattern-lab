@@ -90,11 +90,11 @@
     margin-bottom: 1rem;
 }
 
-.sg-pattern-example > .ah_c__alert:last-child {
+.sg-pattern-example > .ah_c_alert:last-child {
     margin-bottom: 0;
 }
 
-.ah_c__alert {
+.ah_c_alert {
     position: static;
     margin: 0;
     width: 100%;

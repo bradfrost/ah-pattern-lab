@@ -1,9 +1,9 @@
-<{{# buttonTag }}button{{/ buttonTag }}{{# linkTag }}a href="{{ url }}"{{/ linkTag }} class="ah_c__btn {{ styleModifier }}" {{# buttonTitle}}title="{{ buttonTitle }}"{{/ buttonTitle}}{{# buttonIsToggle }} data-btn-icon-swap="{{ iconPath }}{{ buttonIconSwap }}"{{/ buttonIsToggle }}>
+<{{# buttonTag }}button{{/ buttonTag }}{{# linkTag }}a href="{{ url }}"{{/ linkTag }} class="ah_c_btn {{ styleModifier }}" {{# buttonTitle}}title="{{ buttonTitle }}"{{/ buttonTitle}}{{# buttonIsToggle }} data-btn-icon-swap="{{ iconPath }}{{ buttonIconSwap }}"{{/ buttonIsToggle }}>
 
-    <div class="ah_c__btn__inner">
+    <div class="ah_c_btn__inner">
 
         {{# buttonIcon }}
-        <svg class="ah_c__btn__icon {{# buttonIsToggle }}js-btn-icon{{/ buttonIsToggle }}">
+        <svg class="ah_c_btn__icon {{# buttonIsToggle }}js-btn-icon{{/ buttonIsToggle }}">
             <use href="{{ iconPath }}#{{ buttonIcon }}"></use>
         </svg>
         {{/ buttonIcon }}
@@ -12,6 +12,6 @@
             {{ buttonText }}
         {{/ buttonText }}
 
-    </div><!--end ah_c__btn__inner-->
+    </div><!--end ah_c_btn__inner-->
 
-</{{# buttonTag }}button{{/ buttonTag }}{{# linkTag }}a{{/ linkTag }}><!-- end ah_c__btn -->
+</{{# buttonTag }}button{{/ buttonTag }}{{# linkTag }}a{{/ linkTag }}><!-- end ah_c_btn -->

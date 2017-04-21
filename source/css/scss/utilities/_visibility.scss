@@ -6,7 +6,7 @@
  * Is Hidden
  * 1) Completely remove from the flow and screen readers.
  */
-.ah_u__is-hidden {
+.ah_u_is-hidden {
     display: none !important;
     visibility: hidden !important;
 }
@@ -15,7 +15,7 @@
  * Is Visibly Hidden
  * 1) Completely remove from the flow but leave available to screen readers.
  */
-.ah_u__is-vishidden {
+.ah_u_is-vishidden {
     position: absolute !important;
     overflow: hidden;
     width: 1px;

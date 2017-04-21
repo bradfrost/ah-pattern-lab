@@ -9,13 +9,13 @@
 /**
  * Primary navigation list
  */
-.ah_c__primary-nav__list {
+.ah_c_primary-nav__list {
 	display: flex;
 
 	/**
 	 * Primary navigation list within a vertical header
 	 */
-	.ah_c__header--vertical & {
+	.ah_c_header--vertical & {
 		display: block;
 	}
 }
@@ -23,14 +23,14 @@
 /**
  * Primary navigation item
  */
-.ah_c__primary-nav__item {
+.ah_c_primary-nav__item {
 	position: relative;
 }
 
 /**
  * Primary navigation link
  */
-.ah_c__primary-nav__link {
+.ah_c_primary-nav__link {
 	display: block;
 	padding: 0.5rem 0;
 	cursor: pointer;
@@ -39,12 +39,12 @@
 /**
  * Primary navigation link with subnavigation
  */
-.ah_c__primary-nav__link--has-children {
+.ah_c_primary-nav__link--has-children {
 
 	/**
 	 * Primary navigation link that has children within a vertical header
 	 */
-	.ah_c__header--vertical & {
+	.ah_c_header--vertical & {
 		display: flex;
 		align-items: center;
 	}
@@ -55,20 +55,20 @@
  * 1) Width of dropdown is an aesthetic choice and aligns the
  *    dropdown with the adjacent nav item.
  */
-.ah_c__primary-nav__sublist {
+.ah_c_primary-nav__sublist {
 	display: none;
 
 	/**
 	 * Primary navigation sublist within vertical header
 	 */
-	.ah_c__header--vertical & {
+	.ah_c_header--vertical & {
 		margin-left: 1rem;
 	}
 
 	/**
 	 * Primary navigation sublist within active primary navigation item
 	 */
-	.ah_c__primary-nav__item.ah_is-active & {
+	.ah_c_primary-nav__item.ah_is-active & {
 		display: block;
 	}
 
@@ -77,35 +77,35 @@
 /**
  * Primary navigation icon
  */
-.ah_c__primary-nav__icon {
+.ah_c_primary-nav__icon {
 	fill: $color-gray-73;
 	transition: fill 0.2s ease;
 
 	/**
 	 * Primary navigation icon within vertical header
 	 */
-	.ah_c__header--vertical & {
+	.ah_c_header--vertical & {
 		margin-left: auto;
 	}
 
 	/**
 	 * Primary navigation icon within vertical header
 	 */
-	.ah_c__header--vertical & {
+	.ah_c_header--vertical & {
 		margin-left: auto;
 	}
 
 	/**
 	 * Primary navigation icon within active link
 	 */
-	.ah_c__primary-nav__item.ah_is-active & {
+	.ah_c_primary-nav__item.ah_is-active & {
 		transform: rotate(90deg);
 	}
 
 	/**
 	 * Primary navigation icon within hovered/focused primary navigation link
 	 */
-	.ah_c__primary-nav__link:hover &, .ah_c__primary-nav__link:focus & {
+	.ah_c_primary-nav__link:hover &, .ah_c_primary-nav__link:focus & {
 		fill: $color-gray-50;
 	}
 }

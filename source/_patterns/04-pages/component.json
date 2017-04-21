@@ -4,7 +4,7 @@
 		"description" : "This is the component description. It will briefly describe the component."
 	},
 	"liveTabs" : {
-		"styleModifier" : "ah_c__tabs--vertical",
+		"styleModifier" : "ah_c_tabs--vertical",
 		"tabs" : [
 			{
 				"id" : "component-1",

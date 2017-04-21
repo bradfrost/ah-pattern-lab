@@ -1,38 +1,38 @@
-<nav id="nav" class="ah_c__primary-nav" role="navigation">
+<nav id="nav" class="ah_c_primary-nav" role="navigation">
 
-    <ul class="ah_c__primary-nav__list">
+    <ul class="ah_c_primary-nav__list">
 
         {{# navItems }}
-		<li class="ah_c__primary-nav__item {{ styleModifier }}">
+		<li class="ah_c_primary-nav__item {{ styleModifier }}">
 
-			<a href="{{ url }}" class="ah_c__primary-nav__link {{# currentPage }}ah_is-current {{/ currentPage }}{{# navChild }} ah_c__primary-nav__link--has-children ah_js__nav-dropdown-trigger{{/ navChild }}">
+			<a href="{{ url }}" class="ah_c_primary-nav__link {{# currentPage }}ah_is-current {{/ currentPage }}{{# navChild }} ah_c_primary-nav__link--has-children ah_js__nav-dropdown-trigger{{/ navChild }}">
 
-				<span class="ah_c__primary-nav__text">{{ label }}</span>
+				<span class="ah_c_primary-nav__text">{{ label }}</span>
 
 				{{# navChild }}
-				<svg class="ah_c__icon ah_c__primary-nav__icon">
+				<svg class="ah_c_icon ah_c_primary-nav__icon">
 	            	<use href="{{ iconPath }}#{{ icon }}"></use>
 	          	</svg>
 				{{/ navChild }}
-			</a><!--end ah_c__primary-nav__link-->
+			</a><!--end ah_c_primary-nav__link-->
 
 			{{# navChild }}
-			<ul class="ah_c__primary-nav__sublist ah_js__nav-dropdown">
+			<ul class="ah_c_primary-nav__sublist ah_js__nav-dropdown">
 
 				{{# navChildList }}
-				<li class="ah_c__primary-nav__subitem">
+				<li class="ah_c_primary-nav__subitem">
 
-					<a href="{{ url}}" class="ah_c__primary-nav__sublink">{{ label }}</a>
+					<a href="{{ url}}" class="ah_c_primary-nav__sublink">{{ label }}</a>
 
-				</li><!-- end ah_c__nav__sublist__item -->
+				</li><!-- end ah_c_nav__sublist__item -->
 				{{/ navChildList }}
 
-			</ul><!-- end ah_c__nav__sublist -->
+			</ul><!-- end ah_c_nav__sublist -->
 			{{/ navChild }}
 
-		</li><!-- end ah_c__nav__list__item -->
+		</li><!-- end ah_c_nav__list__item -->
         {{/ navItems }}
 
-	</ul><!-- end ah_c__nav__list -->
+	</ul><!-- end ah_c_nav__list -->
 
-</nav><!-- end ah_c__nav -->
+</nav><!-- end ah_c_nav -->

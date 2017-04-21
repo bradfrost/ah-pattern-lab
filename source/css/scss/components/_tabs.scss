@@ -10,7 +10,7 @@
   * Vertical tabs
   * 1) Displays tabs on the right and the body on the left
   */
-.ah_c__tabs--vertical {
+.ah_c_tabs--vertical {
 	display: flex;
 	margin-bottom: 1rem;
 }
@@ -18,14 +18,14 @@
 /**
  * Tabs list
  */
-.ah_c__tabs__list {
+.ah_c_tabs__list {
 	display: flex;
 	border-bottom: 1px solid $color-gray-27;
 
 	/**
 	 * Tabs list within vertical tabs
 	 */
-	.ah_c__tabs--vertical & {
+	.ah_c_tabs--vertical & {
 		border: 1px solid $color-gray-27;
 		display: block;
 		order: 1;
@@ -37,7 +37,7 @@
  * Tabs list
  * 1) Overlap the tabs bottom border
  */
-.ah_c__tabs__link {
+.ah_c_tabs__link {
 	display: block;
 	padding: 0.5rem 1rem;
 	margin-bottom: -1px;
@@ -55,14 +55,14 @@
 	/**
 	 * Tabs link within vertical tabs
 	 */
-	.ah_c__tabs--vertical & {
+	.ah_c_tabs--vertical & {
 		border: 0;
 		border-bottom: 1px solid $color-gray-27;
 
 		/**
 		 * Last tabs item link within vertical tabs
 		 */
-		.ah_c__tabs__item:last-child & {
+		.ah_c_tabs__item:last-child & {
 			border-bottom: 0;
 		}
 
@@ -79,7 +79,7 @@
 /**
  * Tab Body
  */
-.ah_c__tabs__body {
+.ah_c_tabs__body {
 	padding: 1rem 0;
 	border-top: 0;
 
@@ -87,7 +87,7 @@
 	 * Tabs body within vertical tabs
 	 * 1) Take up the remaining space that the actual tabs do not take up
 	 */
-	.ah_c__tabs--vertical & {
+	.ah_c_tabs--vertical & {
 		flex: 1; /* 1 */
 		border: 1px solid $color-gray-27;
 		border-right: 0;
@@ -99,7 +99,7 @@
  * Tab Panel
  * 1) Display by default, and only hide if JS is available
  */
-.ah_c__tabs__panel {
+.ah_c_tabs__panel {
 	display: none;
 	padding: 1rem;
 

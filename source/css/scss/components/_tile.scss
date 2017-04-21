@@ -6,7 +6,7 @@
  * 1) A block of stylized content containing a key and a value
  * 2) The root of a tile is typically <a> tag
  */
-.ah_c__tile {
+.ah_c_tile {
 	display: block;
 	align-items: center;
 	padding: 1.5rem;
@@ -19,7 +19,7 @@
  * Tile headline
  * 1) Headline of the tile
  */
-.ah_c__tile__headline {
+.ah_c_tile__headline {
 	display: block;
 	font-size: $font-size-large;
 }

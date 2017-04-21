@@ -6,7 +6,7 @@
  * 1) Button or link that has functionality to it
  * 2) Remove box-shadow that's globally applied to links
  */
-.ah_c__btn {
+.ah_c_btn {
 	display: inline-block;
 	background: $color-gray-73;
 	border-radius: $border-radius;
@@ -28,7 +28,7 @@
 	/**
 	 * Button within hero
 	 */
-	.ah_c__hero & {
+	.ah_c_hero & {
 		display: block;
 		margin-left: auto;
 	}
@@ -37,7 +37,7 @@
 /**
  * Small button
  */
-.ah_c__btn--small {
+.ah_c_btn--small {
 	padding: .375rem .75rem;
 }
 
@@ -45,7 +45,7 @@
  * Inner container of the buttonTag
  * Allows for display flex on a button, since that is a bug with flexbox
  */
-.ah_c__btn__inner {
+.ah_c_btn__inner {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -54,7 +54,7 @@
 /*
  * Button icon
  */
-.ah_c__btn__icon {
+.ah_c_btn__icon {
 	width: 16px;
 	height: 16px;
 	fill: $color-gray-50;
@@ -64,14 +64,14 @@
 	/*
 	 * Button icon within button hover
 	 */
-	.ah_c__btn:hover &, .ah_c__btn:focus & {
+	.ah_c_btn:hover &, .ah_c_btn:focus & {
 		fill: $color-gray-73;
 	}
 
 	/*
 	 * Button icon within active button
 	 */
-	.ah_c__btn.is-active & {
+	.ah_c_btn.is-active & {
 		fill: $color-black;
 	}
 }
@@ -86,7 +86,7 @@
 /**
  * 1) Button that is text only and doesn't contain a border or fill.
  */
-.ah_c__text-btn {
+.ah_c_text-btn {
 	background: none;
 	border: 0;
 	padding: 0;
@@ -99,7 +99,7 @@
 /**
  * Text button with error
  */
-.ah_c__text-btn--error {
+.ah_c_text-btn--error {
 	color: $color-utility-error;
 
 	&:hover, &:focus {

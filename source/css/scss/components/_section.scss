@@ -5,7 +5,7 @@
 /**
  * Section block that helps chunk related items together
  */
-.ah_c__section {
+.ah_c_section {
 	margin-bottom: 1rem;
 }
 
@@ -20,7 +20,7 @@
 /**
  * 1) Block containing section title and description to distinguish section
  */
-.ah_c__section-header {
+.ah_c_section-header {
 	margin-bottom: 1rem;
 	border-bottom: 1px solid $color-gray-07;
 }
@@ -28,13 +28,13 @@
 /**
  * Section header title
  */
-.ah_c__section-header__title {
+.ah_c_section-header__title {
 	font-size: $font-size-large;
 }
 
 /**
  * Section description
  */
-.ah_c__section-header__desc {
+.ah_c_section-header__desc {
 	font-size: $font-size-med;
 }

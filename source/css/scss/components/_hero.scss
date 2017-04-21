@@ -5,7 +5,7 @@
 /**
  * 1) Block containing headline, description text, that serves as a primary content area
  */
-.ah_c__hero {
+.ah_c_hero {
 	display: block;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +17,7 @@
 /**
  * Hero Image
  */
-.ah_c__hero__img {
+.ah_c_hero__img {
 	display: block;
     width: 100%;
 	margin-bottom: 1rem;
@@ -30,7 +30,7 @@
 /**
  * Hero Body
  */
- .ah_c__hero__body {
+ .ah_c_hero__body {
     padding: 2rem 1rem;
 
     @media all and (min-width: $bp-med) {
@@ -45,7 +45,7 @@
 /**
  * Hero Title
  */
-.ah_c__hero__title {
+.ah_c_hero__title {
 	max-width: 48rem;
 	margin: 0 0 1rem auto;
 	font-size: 2rem;
@@ -60,7 +60,7 @@
 /**
  * Hero Description
  */
-.ah_c__hero__desc {
+.ah_c_hero__desc {
 	margin-bottom: 2rem;
 	margin-left: auto;
 	max-width: 34rem;
