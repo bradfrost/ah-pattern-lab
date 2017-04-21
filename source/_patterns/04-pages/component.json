@@ -91,5 +91,42 @@
 				"label" : "Application 4"
 			}
 		]
+	},
+	"classSection" :  {
+		"section" : {
+			"title" : "Class Descriptions",
+			"description" : "These are the class descriptions for the patterns, including variations and functionality."
+		},
+		"tableHeaderCells" : [
+	        {
+	            "th" : "Class Name"
+	        },
+	        {
+	            "th" : "Description"
+	        }
+	    ],
+	    "tableRows" : [
+	        {
+	            "tableCells" : [
+	                {
+	                    "td" : ".ah_c_table"
+	                },
+	                {
+	                    "td" : "This is the default table style"
+	                }
+	            ]
+	        },
+	        {
+	            "tableCells" : [
+	                {
+	                    "td" : ".ah_c_table--compact"
+	                },
+	                {
+	                    "td" : "This is more compact version of the table"
+	                }
+	            ]
+	        }
+	    ],
+	    "tableFooterCells" : false
 	}
 }
