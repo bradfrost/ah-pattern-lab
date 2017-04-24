@@ -16,7 +16,13 @@
 
             	{{> molecules-page-header }}
 
-                <div class="fpo-block">Markdown text</div>
+                {{# guidelineSection }}
+                <section class="ah_c_section">
+                    <div class="ah_c_text-passage">
+                        {{{ htmlText }}}
+                    </div>
+                </section>
+                {{/ guidelineSection }}
 
                 {{# contributeSection }}
                 <section class="ah_c_section">
