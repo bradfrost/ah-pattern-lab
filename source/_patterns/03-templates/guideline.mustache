@@ -18,7 +18,15 @@
 
                 <div class="fpo-block">Markdown text</div>
 
-                <div class="fpo-block">Discussion/conversation/contributing</div>
+                {{# contributeSection }}
+                <section class="ah_c_section">
+
+                    {{> molecules-section-header}}
+
+                    {{> organisms-card-list }}
+
+                </section>
+                {{/ contributeSection }}
 
             </main><!--end role=main-->
 

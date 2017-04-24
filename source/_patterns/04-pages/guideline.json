@@ -2,5 +2,40 @@
 	"page" : {
 		"title" : "Guidelines Title",
 		"description" : "This is the guidelines description. It will elaborate on the guidelines and principles that need to be followed to build applications."
+	},
+	"contributeSection" : {
+		"section" : {
+			"title" : "Contribute and Discuss",
+			"description" : "Get involved with the design system"
+		},
+		"cardList" : [
+			{
+				"cardHeader" : false,
+				"cardBody" : {
+					"heading" : "Contribute",
+					"excerpt" : "Contribute to the design system here",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			},
+			{
+				"cardHeader" : false,
+				"cardBody" : {
+					"heading" : "Discuss",
+					"excerpt" : "Join the discussion of the design system here",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			},
+			{
+				"cardHeader" : false,
+				"cardBody" : {
+					"heading" : "Any Issues?",
+					"excerpt" : "Having troubles with the design system? Report any issues here",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			}
+		]
 	}
 }
