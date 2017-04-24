@@ -45,13 +45,13 @@
  * Main section
  * 1) The main section is the primary content container
  */
-.ah_l_main {
+.ah_l_page-layout__main {
 
     /**
 	 * Main section of 2 column fixed layout
 	 * 1) Margin left equals width of the fixed positioned sidebar
 	 */
-    .ah_l--two-column-fixed > & {
+    .ah_l_page-layout--two-column-fixed > & {
         height: 100vh;
 
         @media all and (min-width: $bp-xl) {
@@ -67,13 +67,13 @@
  *    avoid that term to be mindful of the fact in
  *    responsive environments "sidebar"
  */
-.ah_l_secondary {
+.ah_l_page-layout__secondary {
 
 	/**
 	 * Secondary section in a two-column fixed layout
 	 * 1) This is a fixed element
 	 */
-    .ah_l--two-column-fixed > & {
+    .ah_l_page-layout--two-column-fixed > & {
         @media all and (min-width: $bp-xl) {
             position: fixed;
     	    z-index: 2;
