@@ -59,5 +59,16 @@
             "label" : "Slack",
             "url" : "link.pages-guideline"
         }
+    ],
+    "breadcrumbs" : [
+        {
+            "label" : "Parent"
+        },
+        {
+            "label" : "Child"
+        },
+        {
+            "label" : "Grandchild"
+        }
     ]
 }
