@@ -6,5 +6,16 @@
     "tile" : {
         "title" : "Tile Title",
         "description" : "This is a description of the tile."
+    },
+    "cardHeader" : {
+        "htmlText" : "Card header"
+    },
+	"cardBody" : {
+        "heading" : "Card Heading",
+        "excerpt" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "iconAfter" : "chevron-right"
+    },
+    "cardFooter" : {
+        "htmlText" : "Card footer"
     }
 }
