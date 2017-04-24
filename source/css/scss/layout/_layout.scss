@@ -102,13 +102,9 @@
 
 	@supports (display: grid) {
 		display: grid;
-		grid-gap: $pad-normal;
+		grid-gap: 16px;
 		grid-template-columns: repeat(auto-fill, minmax(285px, 1fr) );
 		margin: 0;
-
-		@media all and (min-width: $bp-med) {
-			grid-gap: $pad-comfortable;
-		}
 	}
 }
 
@@ -117,7 +113,7 @@
  * 1) If display: grid is not supported, create evenly distributed grid using display flex
  * 2) Otherwise, display abstract grid
  */
-.ah-l__abstract-grid {
+.ah_l_abstract-grid {
 	display: flex; /* 1 */
 	flex-wrap: wrap;
 	margin: 0 -0.5rem;
@@ -198,7 +194,7 @@
 	 * 5) Multiples of 3 items (3, 6, etc.), span only column 1
 	 * 6) Multiples of 4 span columns 2 and 3
 	 */
-	.ah-l__abstract-grid & { /* 1 */
+	.ah_l_abstract-grid & { /* 1 */
 		width: 100%;
 
 		@media all and (min-width: 35em) {

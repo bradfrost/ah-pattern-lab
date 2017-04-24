@@ -16,26 +16,26 @@
     "tileList" : [
         {
             "tile" : {
-                "title" : "Application 1",
-                "description" : "Brief Application 1 description"
+                "title" : " Tile 1",
+                "description" : "Brief Tile 1 description"
             }
         },
         {
             "tile" : {
-                "title" : "Application 2",
-                "description" : "Brief Application 2 description"
+                "title" : "Tile 2",
+                "description" : "Brief Tile 2 description"
             }
         },
         {
             "tile" : {
-                "title" : "Application 3",
-                "description" : "Brief Application 3 description"
+                "title" : "Tile 3",
+                "description" : "Brief Tile 3 description"
             }
         },
         {
             "tile" : {
-                "title" : "Application 4",
-                "description" : "Brief Application 4 description"
+                "title" : "Tile 4",
+                "description" : "Brief Tile 4 description"
             }
         }
     ],
