@@ -4,7 +4,7 @@
 			"title" : "Benefits",
 			"description" : "These are the benefits of the design system."
 		},
-		"htmlText" : "<ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>"
+		"htmlText" : "<ul><li>Benefit 1</li><li>Benefit 2</li><li>Benefit 3</li></ul>"
 	},
 	"appGallerySection" :  {
 		"section" : {
