@@ -60,5 +60,108 @@
 				}
 			}
 		]
+	},
+	"usageSection" :  {
+		"section" : {
+			"title" : "Usage Guidelines",
+			"description" : "These are the usage guidelines for the design system."
+		},
+		"htmlText" : "<h3>When To Use</h3><p>Use this pattern like this. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><h3>Principles and Guidelines</h3><p>Here are the principles and guidelines for the component. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+	},
+	"exampleSection" :  {
+		"section" : {
+			"title" : "Real-life Examples",
+			"description" : "This pattern is featured in these different applications."
+		},
+		"linkList" : [
+			{
+				"url" : "#",
+				"label" : "Application 1"
+			},
+			{
+				"url" : "#",
+				"label" : "Application 2"
+			},
+			{
+				"url" : "#",
+				"label" : "Application 3"
+			},
+			{
+				"url" : "#",
+				"label" : "Application 4"
+			}
+		]
+	},
+	"classSection" :  {
+		"section" : {
+			"title" : "Class Descriptions",
+			"description" : "These are the class descriptions for the patterns, including variations and functionality."
+		},
+		"tableHeaderCells" : [
+	        {
+	            "th" : "Class Name"
+	        },
+	        {
+	            "th" : "Description"
+	        }
+	    ],
+	    "tableRows" : [
+	        {
+	            "tableCells" : [
+	                {
+	                    "td" : ".ah_c_table"
+	                },
+	                {
+	                    "td" : "This is the default table style"
+	                }
+	            ]
+	        },
+	        {
+	            "tableCells" : [
+	                {
+	                    "td" : ".ah_c_table--compact"
+	                },
+	                {
+	                    "td" : "This is more compact version of the table"
+	                }
+	            ]
+	        }
+	    ],
+	    "tableFooterCells" : false
+	},
+	"contributeSection" : {
+		"section" : {
+			"title" : "Contribute and Discuss",
+			"description" : "Get involved with the design system"
+		},
+		"cardList" : [
+			{
+				"cardHeader" : false,
+				"cardBody" : {
+					"heading" : "Contribute",
+					"excerpt" : "Contribute to the design system here",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			},
+			{
+				"cardHeader" : false,
+				"cardBody" : {
+					"heading" : "Discuss",
+					"excerpt" : "Join the discussion of the design system here",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			},
+			{
+				"cardHeader" : false,
+				"cardBody" : {
+					"heading" : "Any Issues?",
+					"excerpt" : "Having troubles with the design system? Report any issues here",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			}
+		]
 	}
 }

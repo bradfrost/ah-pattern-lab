@@ -18,7 +18,7 @@
         },
         {
             "label" : "Components",
-            "url" : "link.pages-guideline",
+            "url" : "#",
             "icon" : "chevron-right",
             "navChild" : {
                 "navChildList" : [

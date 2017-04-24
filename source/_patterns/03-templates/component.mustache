@@ -24,13 +24,47 @@
                     {{> organisms-tabs}}
                     {{/ codeTabs }}
 
-                    <div class="fpo-block">Usage Guidelines (Do's, Dont's, Considerations, Alternatives, Resources)</div>
+                    {{# usageSection }}
+                    <section class="ah_c_section">
 
-                    <div class="fpo-block">Live site examples</div>
+                        {{> molecules-section-header }}
 
-                    <div class="fpo-block">Detailed class description</div>
+                        <div class="ah_c_text-passage">
+                            {{{ htmlText }}}
+                        </div>
 
-                    <div class="fpo-block">Discussion/conversation/issues/contributing</div>
+                    </section>
+                    {{/ usageSection }}
+
+                    {{# exampleSection }}
+                    <section class="ah_c_section">
+
+                        {{> molecules-section-header }}
+
+                        {{> molecules-link-list }}
+
+                    </section>
+                    {{/ exampleSection }}
+
+                    {{# classSection }}
+                    <section class="ah_c_section">
+
+                        {{> molecules-section-header }}
+
+                        {{> organisms-table }}
+
+                    </section>
+                    {{/ classSection }}
+
+                    {{# contributeSection }}
+                    <section class="ah_c_section">
+
+                        {{> molecules-section-header}}
+
+                        {{> organisms-card-list }}
+
+                    </section>
+                    {{/ contributeSection }}
 
             </main><!--end role=main-->
 

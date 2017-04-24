@@ -1,0 +1,53 @@
+/*------------------------------------*\
+	#TABLE
+\*------------------------------------*/
+
+/**
+ * 1) Data Table
+ */
+.ah_c_table {
+	margin-bottom: 1rem;
+	min-width: 600px; /* 2 */
+}
+
+/**
+ * Table Header
+ */
+.ah_c_table__header {
+	background: $color-gray-07;
+}
+
+/**
+ * Table Header Cell
+ */
+.ah_c_table__header-cell {
+	padding: 0.8rem;
+}
+
+/**
+ * Table Row
+ */
+.ah_c_table__row {
+	border-bottom: 1px solid $color-gray-07;
+}
+
+/**
+ * Table Cell
+ */
+.ah_c_table__cell {
+	padding: 1.6rem 0.8rem;
+}
+
+/**
+ * Table Footer
+ */
+.ah_c_table__footer {
+
+}
+
+/**
+ * Table Footer Cell
+ */
+.ah_c_table__footer-cell {
+	padding: 0.8rem;
+}

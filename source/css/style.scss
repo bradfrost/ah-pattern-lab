@@ -37,6 +37,7 @@
 @import "scss/base/main";
 @import "scss/base/media";
 @import "scss/base/text";
+@import "scss/base/tables";
 
 
 
@@ -55,6 +56,8 @@
     #COMPONENTS
 \*------------------------------------*/
 @import "scss/components/buttons";
+@import "scss/components/button-group";
+@import "scss/components/card";
 @import "scss/components/footer-nav";
 @import "scss/components/footer";
 @import "scss/components/header";
@@ -64,6 +67,7 @@
 @import "scss/components/page-header";
 @import "scss/components/primary-nav";
 @import "scss/components/section";
+@import "scss/components/table";
 @import "scss/components/tabs";
 @import "scss/components/text-passage";
 @import "scss/components/tile";

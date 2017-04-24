@@ -1,0 +1,40 @@
+
+<table class="ah_c_table {{ styleModifier }}">
+
+	<thead class="ah_c_table__header">
+
+		<tr class="ah_c_table__header-row">
+            {{# tableHeaderCells }}
+			<th scope="col" class="ah_c_table__header-cell {{ tableHeaderModifier }}">{{ th }}</th>
+            {{/ tableHeaderCells }}
+		</tr><!-- ah_c_table__header-row -->
+
+	</thead><!-- end ah_c_table__header -->
+
+	<tbody class="ah_c_table__body {{ tableBodyModifier }}">
+
+        {{# tableRows }}
+        <tr class="ah_c_table__row {{ styleModifier }}">
+
+            {{# tableCells }}
+			<td class="ah_c_table__cell {{ cellModifier }}">
+				{{{ td }}}
+			</td>
+            {{/ tableCells }}
+
+		</tr><!-- end ah_c_table__row -->
+        {{/ tableRows }}
+
+	</tbody><!-- end ah_c_table__body -->
+
+    <tfoot class="ah_c_table__footer">
+
+		<tr class="ah_c_table__footer-row">
+            {{# tableFooterCells }}
+            <td class="ah_c_table__footer-cell">{{ td }}</td>
+            {{/ tableFooterCells }}
+        </tr>
+
+    </tfoot><!-- end ah_c_table__footer -->
+
+</table><!--end ah_c_table-->

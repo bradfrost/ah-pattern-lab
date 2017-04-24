@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #BUTTON GROUP
+\*------------------------------------*/
+
+/**
+ * 1) A button group displays buttons side-by-side.
+ */
+.ah_c_btn-group {
+	display: flex;
+}
+
+/**
+ * 1) A button group displays buttons side-by-side.
+ */
+.ah_c_btn-group--responsive {
+	flex-direction: column;
+
+	@media all and (min-width: $bp-small) {
+		flex-direction: row;
+	}
+}
