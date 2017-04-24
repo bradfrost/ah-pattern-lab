@@ -1,6 +1,6 @@
 {
     "navToggle" : {
-        "styleModifier" : "ah_c_header__nav-btn ah_js-nav-trigger",
+        "styleModifier" : "ah_c_btn--small ah_c_header__nav-btn ah_js-nav-trigger",
         "buttonText" : "Menu"
     },
     "navItems" : [
