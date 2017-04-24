@@ -1,14 +1,14 @@
-<div class="ah_l ah_l--two-column-fixed">
+<div class="ah_l_page-layout ah_l_page-layout--two-column-fixed">
 
-    <div class="ah_l_secondary">
+    <div class="ah_l_page-layout__secondary">
 
         {{# styleGuideHeader }}
         {{> organisms-header }}
         {{/ styleGuideHeader }}
 
-    </div><!--end ah_l_secondary-->
+    </div><!--end ah_l_page-layout__secondary-->
 
-    <div class="ah_l_main">
+    <div class="ah_l_page-layout__main">
 
         <div class="ah_l_container">
 
@@ -16,9 +16,23 @@
 
             	{{> molecules-page-header }}
 
-                <div class="fpo-block">Markdown text</div>
+                {{# guidelineSection }}
+                <section class="ah_c_section">
+                    <div class="ah_c_text-passage">
+                        {{{ htmlText }}}
+                    </div>
+                </section>
+                {{/ guidelineSection }}
 
-                <div class="fpo-block">Discussion/conversation/contributing</div>
+                {{# contributeSection }}
+                <section class="ah_c_section">
+
+                    {{> molecules-section-header}}
+
+                    {{> organisms-card-list }}
+
+                </section>
+                {{/ contributeSection }}
 
             </main><!--end role=main-->
 
@@ -26,6 +40,6 @@
 
         </div><!--end ah_l_container-->
 
-    </div><!--end ah_l_main-->
+    </div><!--end ah_l_page-layout__main-->
 
 </div><!--end ah_l--two-column-fixed-->

@@ -6,7 +6,12 @@
  * Branding image or text of the site
  */
 .ah_c_logo {
-	margin: 0 0 1rem;
+	margin: 0 2rem 0 0;
+	max-width: 14rem;
+
+	@media all and (min-width: $bp-xl) {
+		margin: 0 0 1rem;
+	}
 }
 
 /**

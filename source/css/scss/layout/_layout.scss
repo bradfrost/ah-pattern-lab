@@ -45,13 +45,13 @@
  * Main section
  * 1) The main section is the primary content container
  */
-.ah_l_main {
+.ah_l_page-layout__main {
 
     /**
 	 * Main section of 2 column fixed layout
 	 * 1) Margin left equals width of the fixed positioned sidebar
 	 */
-    .ah_l--two-column-fixed > & {
+    .ah_l_page-layout--two-column-fixed > & {
         height: 100vh;
 
         @media all and (min-width: $bp-xl) {
@@ -67,13 +67,13 @@
  *    avoid that term to be mindful of the fact in
  *    responsive environments "sidebar"
  */
-.ah_l_secondary {
+.ah_l_page-layout__secondary {
 
 	/**
 	 * Secondary section in a two-column fixed layout
 	 * 1) This is a fixed element
 	 */
-    .ah_l--two-column-fixed > & {
+    .ah_l_page-layout--two-column-fixed > & {
         @media all and (min-width: $bp-xl) {
             position: fixed;
     	    z-index: 2;
@@ -102,13 +102,9 @@
 
 	@supports (display: grid) {
 		display: grid;
-		grid-gap: $pad-normal;
+		grid-gap: 16px;
 		grid-template-columns: repeat(auto-fill, minmax(285px, 1fr) );
 		margin: 0;
-
-		@media all and (min-width: $bp-med) {
-			grid-gap: $pad-comfortable;
-		}
 	}
 }
 
@@ -117,7 +113,7 @@
  * 1) If display: grid is not supported, create evenly distributed grid using display flex
  * 2) Otherwise, display abstract grid
  */
-.ah-l__abstract-grid {
+.ah_l_abstract-grid {
 	display: flex; /* 1 */
 	flex-wrap: wrap;
 	margin: 0 -0.5rem;
@@ -150,6 +146,16 @@
 	    @media all and (min-width: 45em) {
             width: 33.33333%;
         }
+
+		/**
+		 * 1) If CSS Grid is supported, set the width
+		 *    of grid__items to 100% to fill space
+		 *    automatically
+		 */
+		@supports (display: grid) {
+			width: 100%; /* 1 */
+			padding: 0;
+		}
     }
 
 	/**
@@ -188,7 +194,7 @@
 	 * 5) Multiples of 3 items (3, 6, etc.), span only column 1
 	 * 6) Multiples of 4 span columns 2 and 3
 	 */
-	.ah-l__abstract-grid & { /* 1 */
+	.ah_l_abstract-grid & { /* 1 */
 		width: 100%;
 
 		@media all and (min-width: 35em) {

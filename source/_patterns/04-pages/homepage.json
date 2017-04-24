@@ -1,30 +1,10 @@
 {
-	"hero" : {
-        "headline" : "Welcome to athenahealth's design system: Agoraphobia!",
-        "excerpt" : "Get started here",
-		"buttonText" : "Get Started"
-    },
-	"user" : {
-		"isLoggedIn" : false,
-		"isLoggedOut" : true
-	},
-	"listEditable" : false,
-	"listHeading" : "This is athenahealth.",
-	"lis" : [
-		{ "liText" : "Make lists." },
-		{ "liText" : "Share lists." },
-		{ "liText" : "Have fun." }
-	],
-	"listCTA" : {
-		"buttonText" : "Make your first list",
-		"buttonTag" : false
-	},
 	"benefitsSection" : {
 		"section" : {
 			"title" : "Benefits",
 			"description" : "These are the benefits of the design system."
 		},
-		"htmlText" : "<ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>"
+		"htmlText" : "<ul><li>Benefit 1</li><li>Benefit 2</li><li>Benefit 3</li></ul>"
 	},
 	"appGallerySection" :  {
 		"section" : {
@@ -32,13 +12,72 @@
 			"description" : "These are the applications currently using the design system"
 		},
 		"tileSection" : {
-			"styleModifier" : "ah-l__abstract-grid"
+			"styleModifier" : "ah_l_grid ah_l_grid--4up",
+			"tileList" : [
+				{
+					"styleModifier" : "",
+					"tile" : {
+						"title" : "Application 1",
+						"description" : "Brief Application 1 description"
+					}
+				},
+				{
+					"styleModifier" : "",
+					"tile" : {
+						"title" : "Application 2",
+						"description" : "Brief Application 2 description"
+					}
+				},
+				{
+					"styleModifier" : "",
+					"tile" : {
+						"title" : "Application 3",
+						"description" : "Brief Application 3 description"
+					}
+				},
+				{
+					"styleModifier" : "",
+					"tile" : {
+						"title" : "Application 4",
+						"description" : "Brief Application 4 description"
+					}
+				}
+			]
 		}
 	},
-	"contributeSection" :  {
+	"contributeSection" : {
 		"section" : {
-			"title" : "Contribute",
-			"description" : "Get started creating your application with the design system"
-		}
+			"title" : "Contribute and Discuss",
+			"description" : "Get involved with the design system"
+		},
+		"cardList" : [
+			{
+				"cardHeader" : false,
+				"cardBody" : {
+					"heading" : "Contribute",
+					"excerpt" : "Contribute to the design system here",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			},
+			{
+				"cardHeader" : false,
+				"cardBody" : {
+					"heading" : "Discuss",
+					"excerpt" : "Join the discussion of the design system here",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			},
+			{
+				"cardHeader" : false,
+				"cardBody" : {
+					"heading" : "Any Issues?",
+					"excerpt" : "Having troubles with the design system? Report any issues here",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			}
+		]
 	}
 }
