@@ -150,6 +150,16 @@
 	    @media all and (min-width: 45em) {
             width: 33.33333%;
         }
+
+		/**
+		 * 1) If CSS Grid is supported, set the width
+		 *    of grid__items to 100% to fill space
+		 *    automatically
+		 */
+		@supports (display: grid) {
+			width: 100%; /* 1 */
+			padding: 0;
+		}
     }
 
 	/**
