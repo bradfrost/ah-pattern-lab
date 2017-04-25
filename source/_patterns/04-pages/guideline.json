@@ -1,7 +1,7 @@
 {
 	"navItems" : [
 		{
-			"label" : "Getting Started",
+			"label" : "Get Started",
 			"url" : "link.pages-guideline"
 		},
 		{
@@ -9,8 +9,12 @@
 			"url" : "link.pages-guideline"
 		},
 		{
-			"label" : "Styles",
+			"label" : "Styles & Brand",
 			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Layouts",
+			"url" : "link.pages-overview"
 		},
 		{
 			"label" : "Components",
@@ -30,13 +34,34 @@
 			"url" : "link.pages-guideline"
 		},
 		{
-			"label" : "Tools",
+			"label" : "Utilities",
 			"url" : "link.pages-guideline"
 		},
 		{
-			"label" : "Contributing",
+			"label" : "Page Templates",
+			"url" : "link.pages-overview"
+		},
+		{
+			"label" : "Search",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Downloads",
+			"url" : "link.pages-overview"
+		},
+		{
+			"label" : "Tutorials",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Support",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Contribute",
 			"url" : "link.pages-guideline"
 		}
+
 	],
 	"page" : {
 		"title" : "Guidelines Title",

@@ -44,19 +44,19 @@
     ],
     "footerNav" : [
         {
-            "label" : "Support",
+            "label" : "About",
             "url" : "link.pages-guideline"
         },
         {
-            "label" : "Contributing",
+            "label" : "Slack Channel",
             "url" : "link.pages-guideline"
         },
         {
-            "label" : "Release History & Roadmap",
+            "label" : "Release History",
             "url" : "link.pages-guideline"
         },
         {
-            "label" : "Slack",
+            "label" : "Contribute",
             "url" : "link.pages-guideline"
         }
     ],
