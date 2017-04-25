@@ -11,7 +11,8 @@ var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   svgSprite = require('gulp-svg-sprites'),
   argv = require('minimist')(process.argv.slice(2)),
-  chalk = require('chalk');
+  chalk = require('chalk'),
+  copy = require('gulp-copy');
 
 /**
  * Normalize all paths to be plain, paths with no leading './',
@@ -133,6 +134,43 @@ gulp.task('pl-copy:styleguide-css', function () {
       return normalizePath(path.join(paths().public.styleguide, '/css'));
     }))
     .pipe(browserSync.stream());
+});
+
+// This is the task that exports the results from Pattern Lab
+// into the Jekyll style guide that lives outside of this repository
+gulp.task('copy:export-to-styleguide', function (done) {
+
+    // Export public/patterns directory to style guide's includes
+    // This is used to include the actual code into the code samples
+    gulp.src('public/patterns/**/*')
+        .pipe(gulp.dest('../ah-style-guide/_includes/patterns'));
+
+    // Export public/patterns directory to style guide patterns directory
+    // This is used to pipe the live patterns into the iframe
+    gulp.src('public/patterns/**/*')
+        .pipe(gulp.dest('../ah-style-guide/patterns'));
+
+    // Export css directory to style guide css directory
+    gulp.src('public/css/**/*')
+        .pipe(gulp.dest('../ah-style-guide/css'));
+
+    // Export js directory to style guide js directory
+    gulp.src('public/js/**/*')
+        .pipe(gulp.dest('../ah-style-guide/js'));
+
+    // Export icons to style guide root directory
+    gulp.src('public/icons.svg')
+        .pipe(gulp.dest('../ah-style-guide'));
+
+    // Export images directory to style guide images directory
+    gulp.src('public/images/**/*')
+        .pipe(gulp.dest('../ah-style-guide/images'));
+
+    // Export images directory to style guide images directory
+    gulp.src('public/images/**/*')
+        .pipe(gulp.dest('../ah-style-guide/images'));
+
+    done();
 });
 
 /******************************************************
@@ -339,3 +377,4 @@ gulp.task('patternlab:connect', gulp.series(function (done) {
 gulp.task('default', gulp.series('patternlab:build'));
 gulp.task('patternlab:watch', gulp.series('patternlab:build', 'svg-sprite', watch));
 gulp.task('patternlab:serve', gulp.series('patternlab:build', 'svg-sprite', 'patternlab:connect', watch));
+gulp.task('style-guide-export', gulp.series('patternlab:build', 'svg-sprite', 'copy:export-to-styleguide'));
