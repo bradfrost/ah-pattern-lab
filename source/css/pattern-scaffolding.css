@@ -247,3 +247,12 @@
     height: 30rem;
     margin-bottom: 0;
 }
+
+/**
+ * cap the min
+ */
+ @media all and (min-width: 70em) {
+    .sg-pattern-example .ah_c_header--vertical {
+        max-width: 20rem;
+    }
+}
