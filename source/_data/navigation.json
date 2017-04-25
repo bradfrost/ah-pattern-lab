@@ -19,7 +19,7 @@
         {
             "label" : "Components",
             "url" : "#",
-            "icon" : "chevron-right",
+            "icon" : "chevron-down",
             "navChild" : {
                 "navChildList" : [
                     {

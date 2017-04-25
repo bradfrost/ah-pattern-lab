@@ -177,8 +177,8 @@
 	 * Primary navigation icon within active link
 	 */
 	.ah_c_primary-nav__item.ah_is-active & {
-		transform: rotate(90deg);
 		fill: $color-white;
+		transform: rotate(180deg);
 	}
 
 	/**
@@ -186,6 +186,7 @@
 	 */
 	.ah_c_header--vertical .ah_c_primary-nav__item.ah_is-active & {
 		fill: $color-gray-73;
+		transform: rotate(90deg);
 	}
 
 	/**
