@@ -2,5 +2,64 @@
 	"page" : {
 		"title" : "Overview Title",
 		"description" : "This is an overview page, which serves as an index page for each major section of the style guide. It will give a summary and provide links to each detail page in a section."
+	},
+	"overviewSection" : {
+		"cardList" : [
+			{
+				"cardHeader" : {
+					"htmlText" : "Global"
+				},
+				"cardBody" : {
+					"heading" : "Header, Footer, Logo",
+					"excerpt" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			},
+			{
+				"cardHeader" : {
+					"htmlText" : "Blocks"
+				},
+				"cardBody" : {
+					"heading" : "Cards, Tiles, Heroes",
+					"excerpt" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			},
+			{
+				"cardHeader" : {
+					"htmlText" : "Lists"
+				},
+				"cardBody" : {
+					"heading" : "Link List, Card List",
+					"excerpt" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			},
+			{
+				"cardHeader" : {
+					"htmlText" : "Navigation"
+				},
+				"cardBody" : {
+					"heading" : "Primary Navigation, Footer Navigation",
+					"excerpt" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			},
+			{
+				"cardHeader" : {
+					"htmlText" : "Interactive"
+				},
+				"cardBody" : {
+					"heading" : "Tabs, Accordion",
+					"excerpt" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+					"iconAfter" : "chevron-right"
+				},
+				"cardFooter" : false
+			}
+		]
 	}
 }
