@@ -14,8 +14,9 @@
 
             <main role="main">
 
-                    {{> molecules-page-header }}
+                {{> molecules-page-header }}
 
+                <section class="ah_c_section">
                     {{# liveTabs }}
                     {{> organisms-tabs}}
                     {{/ liveTabs }}
@@ -23,48 +24,49 @@
                     {{# codeTabs }}
                     {{> organisms-tabs}}
                     {{/ codeTabs }}
+                </section>
 
-                    {{# usageSection }}
-                    <section class="ah_c_section">
+                {{# usageSection }}
+                <section class="ah_c_section">
 
-                        {{> molecules-section-header }}
+                    {{> molecules-section-header }}
 
-                        <div class="ah_c_text-passage">
-                            {{{ htmlText }}}
-                        </div>
+                    <div class="ah_c_text-passage">
+                        {{{ htmlText }}}
+                    </div>
 
-                    </section>
-                    {{/ usageSection }}
+                </section>
+                {{/ usageSection }}
 
-                    {{# exampleSection }}
-                    <section class="ah_c_section">
+                {{# exampleSection }}
+                <section class="ah_c_section">
 
-                        {{> molecules-section-header }}
+                    {{> molecules-section-header }}
 
-                        {{> molecules-link-list }}
+                    {{> molecules-link-list }}
 
-                    </section>
-                    {{/ exampleSection }}
+                </section>
+                {{/ exampleSection }}
 
-                    {{# classSection }}
-                    <section class="ah_c_section">
+                {{# classSection }}
+                <section class="ah_c_section">
 
-                        {{> molecules-section-header }}
+                    {{> molecules-section-header }}
 
-                        {{> organisms-table }}
+                    {{> organisms-table }}
 
-                    </section>
-                    {{/ classSection }}
+                </section>
+                {{/ classSection }}
 
-                    {{# contributeSection }}
-                    <section class="ah_c_section">
+                {{# contributeSection }}
+                <section class="ah_c_section">
 
-                        {{> molecules-section-header}}
+                    {{> molecules-section-header}}
 
-                        {{> organisms-card-list }}
+                    {{> organisms-card-list }}
 
-                    </section>
-                    {{/ contributeSection }}
+                </section>
+                {{/ contributeSection }}
 
             </main><!--end role=main-->
 
