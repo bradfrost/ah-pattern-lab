@@ -130,19 +130,10 @@
 	border: 0;
 	padding: 0;
 	cursor: pointer;
-	text-transform: lowercase;
 	border-radius: $border-radius;
 	transition: background $fade-quick $anim-ease;
-}
-
-/**
- * Text button with error
- */
-.ah_c_text-btn--error {
-	color: $color-utility-error;
 
 	&:hover, &:focus {
-		color: $color-utility-error;
-		background: $color-utility-error-light;
+		color: $color-gray-50;
 	}
 }

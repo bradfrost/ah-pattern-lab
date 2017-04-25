@@ -1,8 +1,5 @@
 {
-    "navToggle" : {
-        "styleModifier" : "ah_c_btn--small ah_c_header__nav-btn ah_js-nav-trigger",
-        "buttonText" : "Menu"
-    },
+    "headerStyleModifier" : "ah_c_header--vertical",
     "navItems" : [
         {
             "label" : "Getting Started",
@@ -19,7 +16,7 @@
         {
             "label" : "Components",
             "url" : "#",
-            "icon" : "chevron-down",
+            "icon" : "chevron-right",
             "navChild" : {
                 "navChildList" : [
                     {
@@ -40,35 +37,6 @@
         {
             "label" : "Contributing",
             "url" : "link.pages-guideline"
-        }
-    ],
-    "footerNav" : [
-        {
-            "label" : "About",
-            "url" : "link.pages-guideline"
-        },
-        {
-            "label" : "Slack Channel",
-            "url" : "link.pages-guideline"
-        },
-        {
-            "label" : "Release History",
-            "url" : "link.pages-guideline"
-        },
-        {
-            "label" : "Contribute",
-            "url" : "link.pages-guideline"
-        }
-    ],
-    "breadcrumbs" : [
-        {
-            "label" : "Parent"
-        },
-        {
-            "label" : "Child"
-        },
-        {
-            "label" : "Grandchild"
         }
     ]
 }

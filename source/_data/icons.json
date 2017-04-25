@@ -1,6 +1,6 @@
 {
 	"iconPath" : "../../icons.svg",
-	"icon" : "list-numbered",
+	"icon" : "chevron-down",
 	"icons" : [
 		{ "icon" : "bin" },
         { "icon" : "bullet" },
@@ -21,9 +21,6 @@
 		{ "icon" : "google" },
 		{ "icon" : "link" },
 		{ "icon" : "linkedin2" },
-		{ "icon" : "list-countdown" },
-		{ "icon" : "list-numbered" },
-		{ "icon" : "list2" },
 		{ "icon" : "minus" },
 		{ "icon" : "plus" },
 		{ "icon" : "radio-checked" },

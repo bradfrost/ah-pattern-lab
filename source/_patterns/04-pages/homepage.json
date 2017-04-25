@@ -1,4 +1,68 @@
 {
+	"navItems" : [
+		{
+			"label" : "Get Started",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Guidelines",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Styles & Brand",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Layouts",
+			"url" : "link.pages-overview"
+		},
+		{
+			"label" : "Components",
+			"url" : "#",
+			"icon" : "chevron-right",
+			"navChild" : {
+				"navChildList" : [
+					{
+						"label" : "Global",
+						"url" : "link.pages-component"
+					}
+				]
+			}
+		},
+		{
+			"label" : "Workflows",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Utilities",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Page Templates",
+			"url" : "link.pages-overview"
+		},
+		{
+			"label" : "Search",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Downloads",
+			"url" : "link.pages-overview"
+		},
+		{
+			"label" : "Tutorials",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Support",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Contribute",
+			"url" : "link.pages-guideline"
+		}
+
+	],
 	"benefitsSection" : {
 		"section" : {
 			"title" : "Benefits",

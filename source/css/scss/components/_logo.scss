@@ -10,7 +10,16 @@
 	max-width: 14rem;
 
 	@media all and (min-width: $bp-xl) {
-		margin: 0 0 1rem;
+		margin: 0;
+	}
+
+	/**
+	 * Logo within vertical header
+	 */
+	.ah_c_header--vertical & {
+		@media all and (min-width: $bp-xl) {
+			margin: 0 0 1rem;
+		}
 	}
 }
 

@@ -11,12 +11,17 @@
  */
 .ah_c_primary-nav__list {
 	display: flex;
+	flex-direction: column;
 
 	/**
 	 * Primary navigation list within a vertical header
 	 */
 	.ah_c_header--vertical & {
 		display: block;
+	}
+
+	@media all and (min-width: $bp-xl) {
+		flex-direction: row;
 	}
 }
 
@@ -25,6 +30,21 @@
  */
 .ah_c_primary-nav__item {
 	position: relative;
+
+	@media all and (min-width: $bp-xl) {
+		margin-right: 1rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	/**
+	 * Primary navigation item within vertical header
+	 */
+	.ah_c_header--vertical & {
+		margin-right: 0;
+	}
 }
 
 /**
@@ -34,19 +54,42 @@
 	display: block;
 	padding: 0.5rem 0;
 	cursor: pointer;
+
+	/**
+	 * Primary navigation link within vertical header
+	 */
+	.ah_c_header--vertical & {
+		padding: 0.5rem 0;
+	}
+
+	@media all and (min-width: $bp-xl) {
+		padding: 0.5rem 0.3rem;
+	}
 }
 
 /**
  * Primary navigation link with subnavigation
  */
 .ah_c_primary-nav__link--has-children {
+	display: flex;
+	align-items: center;
 
 	/**
-	 * Primary navigation link that has children within a vertical header
+	 * Primary navigation link withing active item
 	 */
-	.ah_c_header--vertical & {
-		display: flex;
-		align-items: center;
+	.ah_c_primary-nav__item.ah_is-active & {
+		@media all and (min-width: $bp-xl) {
+			background: $color-gray-73;
+			color: $color-white;
+		}
+	}
+
+	/**
+	 * Primary navigation link within active item in vertical header
+	 */
+	.ah_c_header--vertical .ah_c_primary-nav__item.ah_is-active & {
+		background: none;
+		color: inherit;
 	}
 }
 
@@ -57,6 +100,7 @@
  */
 .ah_c_primary-nav__sublist {
 	display: none;
+	margin-left: 1rem;
 
 	/**
 	 * Primary navigation sublist within vertical header
@@ -66,12 +110,45 @@
 	}
 
 	/**
+	 * Primary navigation sublist within vertical header active primary nav item
+	 */
+	.ah_c_header--vertical.ah_is-active & {
+		display: block
+	}
+
+	/**
 	 * Primary navigation sublist within active primary navigation item
 	 */
 	.ah_c_primary-nav__item.ah_is-active & {
 		display: block;
+
+		@media all and (min-width: $bp-xl) {
+			background: $color-gray-73;
+			padding: .5rem 1rem 1rem;
+			margin: 0;
+			position: absolute;
+			top: 100%;
+			z-index: 6;
+			min-width: 8rem;
+		}
 	}
 
+	/**
+	 * Primary navigation sublist within active item in vertical header
+	 */
+	.ah_c_header--vertical .ah_c_primary-nav__item.ah_is-active & {
+		background: none;
+
+		@media all and (min-width: $bp-xl) {
+			margin: 0;
+			position: static;
+
+		}
+	}
+
+	@media all and (min-width: $bp-xl) {
+		margin-left: 0;
+	}
 }
 
 /**
@@ -80,6 +157,7 @@
 .ah_c_primary-nav__icon {
 	fill: $color-gray-73;
 	transition: fill 0.2s ease;
+	margin-left: auto;
 
 	/**
 	 * Primary navigation icon within vertical header
@@ -99,6 +177,15 @@
 	 * Primary navigation icon within active link
 	 */
 	.ah_c_primary-nav__item.ah_is-active & {
+		fill: $color-white;
+		transform: rotate(180deg);
+	}
+
+	/**
+	 * Primary navigation icon within active link within vertical header
+	 */
+	.ah_c_header--vertical .ah_c_primary-nav__item.ah_is-active & {
+		fill: $color-gray-73;
 		transform: rotate(90deg);
 	}
 
@@ -107,5 +194,24 @@
 	 */
 	.ah_c_primary-nav__link:hover &, .ah_c_primary-nav__link:focus & {
 		fill: $color-gray-50;
+	}
+}
+
+/**
+ * Primary navigation sublink
+ */
+.ah_c_primary-nav__sublink {
+
+	@media all and (min-width: $bp-xl) {
+		color: $color-white;
+	}
+
+	/**
+	 * Primary navigation sublink within vertical header
+	 */
+	.ah_c_header--vertical & {
+		@media all and (min-width: $bp-xl) {
+			color: inherit;
+		}
 	}
 }

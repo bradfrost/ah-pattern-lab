@@ -47,27 +47,46 @@
 .ah_c_header__nav-container {
 	display: none;
 
-	/**
-	 * Active header nav container
-	 */
-	&.ah_is-active {
+	@media all and (min-width: $bp-xl) {
 		display: block;
-		position: absolute;
-		background: $color-gray-07;
-		top: 100%;
-		left: 0;
-		width: 100%;
-		z-index: 5;
-		padding: 1rem;
+		margin-left: auto;
+	}
 
+	.ah_c_header--vertical & {
 		@media all and (min-width: $bp-xl) {
-			display: block;
-			position: static;
-			padding: 0;
+			margin-left: 0;
 		}
 	}
+}
+
+/**
+ * Active header nav container
+ */
+.ah_c_header__nav-container.ah_is-active {
+	display: block;
+	position: absolute;
+	background: $color-gray-07;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	z-index: 5;
+	padding: 1rem;
 
 	@media all and (min-width: $bp-xl) {
 		display: block;
+		position: static;
+		padding: 0;
+		margin-left: auto;
+		width: inherit;
+	}
+
+	/**
+	 * Active header nav container within vertical header
+	 */
+	.ah_c_header--vertical &{
+		@media all and (min-width: $bp-xl) {
+			margin-left: 0;
+			width: 100%;
+		}
 	}
 }
