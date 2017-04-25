@@ -24,7 +24,7 @@
 				"navChildList" : [
 					{
 						"label" : "Global",
-						"url" : "link.pages-component",
+						"url" : "#",
 						"subNavChild" : {
 							"subNavChildList" : [
 								{

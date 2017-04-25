@@ -194,6 +194,16 @@
 }
 
 /**
+ * Primary navigation sublink with subnavigation
+ */
+.ah_c_primary-nav__sublink--has-children {
+	display: flex;
+	align-items: center;
+}
+
+
+
+/**
  * Primary navigation icon
  */
 .ah_c_primary-nav__icon {
