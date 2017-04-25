@@ -22,7 +22,31 @@
 				{{# navChildList }}
 				<li class="ah_c_primary-nav__subitem">
 
-					<a href="{{ url}}" class="ah_c_primary-nav__sublink">{{ label }}</a>
+					<a href="{{ url}}" class="ah_c_primary-nav__sublink {{# subNavChild }}ah_c_primary-nav__link--has-children ah_js__nav-dropdown-trigger{{/ subNavChild }}">
+
+                        <span class="ah_c_primary-nav__text">{{ label }}</span>
+
+                        {{# subNavChild }}
+                            <svg class="ah_c_icon ah_c_primary-nav__subicon">
+                                <use href="{{ iconPath }}#chevron-right"></use>
+                            </svg>
+                        {{/ subNavChild }}
+
+                    </a>
+
+                    {{# subNavChild }}
+                    <ul class="ah_c_primary-nav__sublist ah_js__nav-dropdown" id="{{ id }}">
+
+                        {{# subNavChildList }}
+                        <li class="ah_c_primary-nav__subitem">
+                            <a href="{{ url }}" class="ah_c_primary-nav__sublink">
+                                <span class="ah_c_primary-nav__text">{{ label }}</span>
+                            </a>
+                        </li><!-- end em-c-nav__sublist__item -->
+                        {{/ subNavChildList }}
+
+                    </ul><!-- end em-c-nav__sublist -->
+                    {{/ subNavChild }}
 
 				</li><!-- end ah_c_nav__sublist__item -->
 				{{/ navChildList }}

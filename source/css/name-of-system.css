@@ -1045,10 +1045,26 @@ tr {
 
 /**
  * Primary navigation list subnavigation
- * 1) Width of dropdown is an aesthetic choice and aligns the
- *    dropdown with the adjacent nav item.
+ * Targets descendant of the
  */
-.ah_c_primary-nav__sublist {
+.ah_c_primary-nav__subitem {
+  /**
+	 * Primary navigation sublist within subitem
+	 */
+  /**
+	 * Primary navigation sublist within active subitem
+	 */ }
+  .ah_c_primary-nav__subitem .ah_c_primary-nav__subitem {
+    display: none; }
+  .ah_c_primary-nav__subitem.ah_is-active .ah_c_primary-nav__subitem {
+    display: block; }
+
+/**
+ * Primary navigation list subnavigation first of type
+ * 1) First of type is chosen to only choose direct descendant of primary
+ *    navigation item
+ */
+.ah_c_primary-nav__sublist:first-of-type {
   display: none;
   margin-left: 1rem;
   /**
@@ -1063,14 +1079,14 @@ tr {
   /**
 	 * Primary navigation sublist within active item in vertical header
 	 */ }
-  .ah_c_header--vertical .ah_c_primary-nav__sublist {
+  .ah_c_header--vertical .ah_c_primary-nav__sublist:first-of-type {
     margin-left: 1rem; }
-  .ah_c_header--vertical.ah_is-active .ah_c_primary-nav__sublist {
+  .ah_c_header--vertical.ah_is-active > .ah_c_primary-nav__sublist:first-of-type {
     display: block; }
-  .ah_c_primary-nav__item.ah_is-active .ah_c_primary-nav__sublist {
+  .ah_c_primary-nav__item.ah_is-active .ah_c_primary-nav__sublist:first-of-type {
     display: block; }
     @media all and (min-width: 70em) {
-      .ah_c_primary-nav__item.ah_is-active .ah_c_primary-nav__sublist {
+      .ah_c_primary-nav__item.ah_is-active .ah_c_primary-nav__sublist:first-of-type {
         background: #444;
         padding: .5rem 1rem 1rem;
         margin: 0;
@@ -1078,15 +1094,32 @@ tr {
         top: 100%;
         z-index: 6;
         min-width: 8rem; } }
-  .ah_c_header--vertical .ah_c_primary-nav__item.ah_is-active .ah_c_primary-nav__sublist {
+  .ah_c_header--vertical .ah_c_primary-nav__item.ah_is-active .ah_c_primary-nav__sublist:first-of-type {
     background: none; }
     @media all and (min-width: 70em) {
-      .ah_c_header--vertical .ah_c_primary-nav__item.ah_is-active .ah_c_primary-nav__sublist {
+      .ah_c_header--vertical .ah_c_primary-nav__item.ah_is-active .ah_c_primary-nav__sublist:first-of-type {
         margin: 0;
+        margin-left: 1rem;
+        padding: 0;
         position: static; } }
   @media all and (min-width: 70em) {
-    .ah_c_primary-nav__sublist {
+    .ah_c_primary-nav__sublist:first-of-type {
       margin-left: 0; } }
+
+/**
+ * Primary navigation sublink
+ */
+.ah_c_primary-nav__sublink {
+  padding: 0.5rem 0;
+  /**
+	 * Primary navigation sublink within vertical header
+	 */ }
+  @media all and (min-width: 70em) {
+    .ah_c_primary-nav__sublink {
+      color: #fff; } }
+  @media all and (min-width: 70em) {
+    .ah_c_header--vertical .ah_c_primary-nav__sublink {
+      color: inherit; } }
 
 /**
  * Primary navigation icon
@@ -1124,18 +1157,34 @@ tr {
     fill: #808080; }
 
 /**
- * Primary navigation sublink
+ * Primary navigation subicon
  */
-.ah_c_primary-nav__sublink {
+.ah_c_primary-nav__subicon {
+  fill: #444;
+  transition: fill 0.2s ease;
+  margin-left: auto;
   /**
-	 * Primary navigation sublink within vertical header
+	 * Primary navigation icon within vertical header
+	 */
+  /**
+	 * Primary navigation subicon within active link
+	 */
+  /**
+	 * Primary navigation subicon within active subitem within vertical header
+	 */
+  /**
+	 * Primary navigation icon within hovered/focused primary navigation link
 	 */ }
-  @media all and (min-width: 70em) {
-    .ah_c_primary-nav__sublink {
-      color: #fff; } }
-  @media all and (min-width: 70em) {
-    .ah_c_header--vertical .ah_c_primary-nav__sublink {
-      color: inherit; } }
+  .ah_c_header--vertical .ah_c_primary-nav__subicon {
+    margin-left: auto; }
+  .ah_c_primary-nav__subitem.ah_is-active .ah_c_primary-nav__subicon {
+    fill: #fff;
+    transform: rotate(180deg); }
+  .ah_c_header--vertical .ah_c_primary-nav__subitem.ah_is-active .ah_c_primary-nav__subicon {
+    fill: #444;
+    transform: rotate(90deg); }
+  .ah_c_primary-nav__sublink:hover .ah_c_primary-nav__subicon, .ah_c_primary-nav__sublink:focus .ah_c_primary-nav__subicon {
+    fill: #808080; }
 
 /*------------------------------------*    #SECTION
 \*------------------------------------*/

@@ -95,10 +95,30 @@
 
 /**
  * Primary navigation list subnavigation
- * 1) Width of dropdown is an aesthetic choice and aligns the
- *    dropdown with the adjacent nav item.
+ * Targets descendant of the
  */
-.ah_c_primary-nav__sublist {
+.ah_c_primary-nav__subitem {
+	/**
+	 * Primary navigation sublist within subitem
+	 */
+	.ah_c_primary-nav__subitem & {
+		display: none;
+	}
+
+	/**
+	 * Primary navigation sublist within active subitem
+	 */
+	.ah_c_primary-nav__subitem.ah_is-active & {
+		display: block;
+	}
+}
+
+/**
+ * Primary navigation list subnavigation first of type
+ * 1) First of type is chosen to only choose direct descendant of primary
+ *    navigation item
+ */
+.ah_c_primary-nav__sublist:first-of-type {
 	display: none;
 	margin-left: 1rem;
 
@@ -112,7 +132,7 @@
 	/**
 	 * Primary navigation sublist within vertical header active primary nav item
 	 */
-	.ah_c_header--vertical.ah_is-active & {
+	.ah_c_header--vertical.ah_is-active > & {
 		display: block
 	}
 
@@ -141,6 +161,8 @@
 
 		@media all and (min-width: $bp-xl) {
 			margin: 0;
+			margin-left: 1rem;
+			padding: 0;
 			position: static;
 
 		}
@@ -148,6 +170,26 @@
 
 	@media all and (min-width: $bp-xl) {
 		margin-left: 0;
+	}
+}
+
+/**
+ * Primary navigation sublink
+ */
+.ah_c_primary-nav__sublink {
+	padding: 0.5rem 0;
+
+	@media all and (min-width: $bp-xl) {
+		color: $color-white;
+	}
+
+	/**
+	 * Primary navigation sublink within vertical header
+	 */
+	.ah_c_header--vertical & {
+		@media all and (min-width: $bp-xl) {
+			color: inherit;
+		}
 	}
 }
 
@@ -198,20 +240,40 @@
 }
 
 /**
- * Primary navigation sublink
+ * Primary navigation subicon
  */
-.ah_c_primary-nav__sublink {
+.ah_c_primary-nav__subicon {
+	fill: $color-gray-73;
+	transition: fill 0.2s ease;
+	margin-left: auto;
 
-	@media all and (min-width: $bp-xl) {
-		color: $color-white;
+	/**
+	 * Primary navigation icon within vertical header
+	 */
+	.ah_c_header--vertical & {
+		margin-left: auto;
 	}
 
 	/**
-	 * Primary navigation sublink within vertical header
+	 * Primary navigation subicon within active link
 	 */
-	.ah_c_header--vertical & {
-		@media all and (min-width: $bp-xl) {
-			color: inherit;
-		}
+	.ah_c_primary-nav__subitem.ah_is-active & {
+		fill: $color-white;
+		transform: rotate(180deg);
+	}
+
+	/**
+	 * Primary navigation subicon within active subitem within vertical header
+	 */
+	.ah_c_header--vertical .ah_c_primary-nav__subitem.ah_is-active & {
+		fill: $color-gray-73;
+		transform: rotate(90deg);
+	}
+
+	/**
+	 * Primary navigation icon within hovered/focused primary navigation link
+	 */
+	.ah_c_primary-nav__sublink:hover &, .ah_c_primary-nav__sublink:focus & {
+		fill: $color-gray-50;
 	}
 }

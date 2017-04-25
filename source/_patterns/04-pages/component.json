@@ -24,7 +24,20 @@
 				"navChildList" : [
 					{
 						"label" : "Global",
-						"url" : "link.pages-component"
+						"url" : "link.pages-component",
+						"subNavChild" : {
+							"subNavChildList" : [
+								{
+									"label" : "Header"
+								},
+								{
+									"label" : "Footer"
+								},
+								{
+									"label" : "Logo"
+								}
+							]
+						}
 					}
 				]
 			}
