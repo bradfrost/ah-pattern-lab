@@ -1,6 +1,5 @@
 {
 	"iconPath" : "../../icons.svg",
-	"icon" : "list-numbered",
 	"icons" : [
 		{ "icon" : "bin" },
         { "icon" : "bullet" },

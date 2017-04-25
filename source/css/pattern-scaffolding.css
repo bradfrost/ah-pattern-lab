@@ -155,7 +155,7 @@
 /**
  * Add height and overflow to two column fixed layout to show functionality only in style-guide example.
  */
-.ah_l_page-layout--two-column-fixed {
+ .sg-pattern-example .ah_l_page-layout--two-column-fixed {
     height: 10rem;
     overflow: auto;
 }
@@ -163,7 +163,7 @@
 /**
  * Add min-height of 0 to two column fixed to help with showing functionality only in style-guide example.
  */
-.ah_l_page-layout--two-column-fixed .ah_l_page-layout__secondary {
+.sg-pattern-example .ah_l_page-layout--two-column-fixed .ah_l_page-layout__secondary {
     min-height: 0;
 }
 
@@ -171,7 +171,7 @@
  * FPO block within two column fixed layout within secondary section
  * 1) Width expands entire container at small screens
  */
-.ah_l_page-layout--two-column-fixed .ah_l_page-layout__secondary .fpo-block {
+.sg-pattern-example .ah_l_page-layout--two-column-fixed .ah_l_page-layout__secondary .fpo-block {
     width: 100%; /* 1 */
 }
 
@@ -181,7 +181,7 @@
  * 2) Set width = width of vertical header
  */
 @media all and (min-width: 70em) {
-    .ah_l_page-layout--two-column-fixed .ah_l_page-layout__secondary .fpo-block {
+     .sg-pattern-example .ah_l_page-layout--two-column-fixed .ah_l_page-layout__secondary .fpo-block {
         width: 20rem; /* 1 */
         height: 100vh; /* 2 */
         margin-bottom: 0;
@@ -236,14 +236,14 @@
 /**
  * Add height of main to get appearance of side bar staying fixed while main window scrolls.
  */
-.ah_l_page-layout--two-column-fixed .ah_l_page-layout__main {
+.sg-pattern-example .ah_l_page-layout--two-column-fixed .ah_l_page-layout__main {
     height: 30rem;
 }
 
 /**
  * Add height of fpo block to equal height of main to help with scrolling main window/fixed sidebar effect.
  */
-.ah_l_page-layout--two-column-fixed .ah_l_page-layout__main .fpo-block {
+.sg-pattern-example .ah_l_page-layout--two-column-fixed .ah_l_page-layout__main .fpo-block {
     height: 30rem;
     margin-bottom: 0;
 }
