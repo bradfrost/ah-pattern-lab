@@ -1,4 +1,43 @@
 {
+	"navItems" : [
+		{
+			"label" : "Getting Started",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Guidelines",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Styles",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Components",
+			"url" : "#",
+			"icon" : "chevron-right",
+			"navChild" : {
+				"navChildList" : [
+					{
+						"label" : "Global",
+						"url" : "link.pages-component"
+					}
+				]
+			}
+		},
+		{
+			"label" : "Workflows",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Tools",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Contributing",
+			"url" : "link.pages-guideline"
+		}
+	],
 	"page" : {
 		"title" : "Guidelines Title",
 		"description" : "This is the guidelines description. It will elaborate on the guidelines and principles that need to be followed to build applications."

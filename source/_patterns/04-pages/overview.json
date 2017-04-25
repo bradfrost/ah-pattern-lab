@@ -1,4 +1,43 @@
 {
+	"navItems" : [
+		{
+			"label" : "Getting Started",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Guidelines",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Styles",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Components",
+			"url" : "#",
+			"icon" : "chevron-right",
+			"navChild" : {
+				"navChildList" : [
+					{
+						"label" : "Global",
+						"url" : "link.pages-component"
+					}
+				]
+			}
+		},
+		{
+			"label" : "Workflows",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Tools",
+			"url" : "link.pages-guideline"
+		},
+		{
+			"label" : "Contributing",
+			"url" : "link.pages-guideline"
+		}
+	],
 	"page" : {
 		"title" : "Overview Title",
 		"description" : "This is an overview page, which serves as an index page for each major section of the style guide. It will give a summary and provide links to each detail page in a section."
