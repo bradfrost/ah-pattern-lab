@@ -5,7 +5,7 @@
         {{# navItems }}
 		<li class="ah_c_primary-nav__item {{ styleModifier }}">
 
-			<a href="{{ url }}" class="ah_c_primary-nav__link {{# currentPage }}ah_is-current {{/ currentPage }}{{# navChild }} ah_c_primary-nav__link--has-children ah_js__nav-dropdown-trigger{{/ navChild }}">
+			<a href="{{ url }}" class="ah_c_primary-nav__link {{# currentPage }}ah_is-current {{/ currentPage }}{{# navChild }} ah_c_primary-nav__link--has-children ah_js_nav-dropdown-trigger{{/ navChild }}">
 
 				<span class="ah_c_primary-nav__text">{{ label }}</span>
 
@@ -22,7 +22,7 @@
 				{{# navChildList }}
 				<li class="ah_c_primary-nav__subitem">
 
-					<a href="{{ url}}" class="ah_c_primary-nav__sublink {{# subNavChild }}ah_c_primary-nav__sublink--has-children ah_js__nav-dropdown-trigger{{/ subNavChild }}">
+					<a href="{{ url}}" class="ah_c_primary-nav__sublink {{# subNavChild }}ah_c_primary-nav__sublink--has-children ah_js_nav-dropdown-trigger{{/ subNavChild }}">
 
                         <span class="ah_c_primary-nav__text">{{ label }}</span>
 
@@ -35,7 +35,7 @@
                     </a>
 
                     {{# subNavChild }}
-                    <ul class="ah_c_primary-nav__sublist ah_js__nav-dropdown" id="{{ id }}">
+                    <ul class="ah_c_primary-nav__sublist ah_js_nav-dropdown" id="{{ id }}">
 
                         {{# subNavChildList }}
                         <li class="ah_c_primary-nav__subitem">

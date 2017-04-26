@@ -10,7 +10,7 @@
  */
 (function(){
 
-	var navLink = document.querySelectorAll('.ah_js__nav-dropdown-trigger'); /* 1 */
+	var navLink = document.querySelectorAll('.ah_js_nav-dropdown-trigger'); /* 1 */
 
 	for (i=0; i<navLink.length; i++) { /* 1 */
 

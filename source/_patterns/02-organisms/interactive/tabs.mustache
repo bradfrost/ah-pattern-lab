@@ -1,10 +1,10 @@
-<div class="ah_c_tabs {{ styleModifier }} ah_js-tabs">
+<div class="ah_c_tabs {{ styleModifier }} ah_js_tabs">
 
 	<ul class="ah_c_tabs__list">
 
 		{{# tabs }}
 		<li class="ah_c_tabs__item">
-			<a href="#{{ id }}" class="ah_c_tabs__link ah_js-tab">{{ label }}</a>
+			<a href="#{{ id }}" class="ah_c_tabs__link ah_js_tab">{{ label }}</a>
 		</li><!-- end ah_c_tabs__item -->
 		{{/ tabs }}
 
@@ -14,7 +14,7 @@
 
 		{{# tabs }}
 
-		<div class="ah_c_tabs__panel ah_js-tabs-panel" id="{{ id }}">
+		<div class="ah_c_tabs__panel ah_js_tabs-panel" id="{{ id }}">
 			{{# tabsText }}
 			{{{ htmlText }}}
 			{{/ tabsText }}
