@@ -78,7 +78,6 @@ gulp.task('concat-and-minify', function(done) {
   // create 1 vendor.js file from all vendor plugin code
   gulp.src('./source/js/vendor/**/*.js')
   .pipe(uglify())
-  .pipe(concat("libraries.js"))
   .pipe(gulp.dest('./public/js'));
 
   done();
