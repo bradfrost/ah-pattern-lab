@@ -7,7 +7,7 @@ The athenahealth design system components are built using [Pattern Lab Node](htt
 In order to get Pattern Lab up and running in your local environment.
 
 1. Download or clone this repository to your local machine.
-2. If gulp is not installed on your computer, install it using `npm install gulp-cli -g`. If that doesn't work, try the `sudo npm install gulp-cli -g` command. 
+2. If gulp is not installed on your computer, install it using `npm install gulp-cli -g` in the command line. If that doesn't work, try the `sudo npm install gulp-cli -g` command. 
 3. In the command line, navigate to the root of the project, then run `npm install` to download the project's dependencies.
 4. Run `gulp patternlab:serve` to build Pattern Lab and watch for changes.
 5. Visit `http://localhost:3000/` in your browser to view Pattern Lab.
