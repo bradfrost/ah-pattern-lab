@@ -30,3 +30,33 @@ hr {
 ::selection {
   background: $color-gray-13; /* WebKit/Blink Browsers */
 }
+
+code {
+	display: inline-block;
+	background: $color-gray-02;
+	border: 1px solid $color-gray-13;
+	padding: .2rem .5rem;
+    line-height: 1.2;
+    font-size: .85rem;
+}
+
+pre {
+	background: $color-gray-02;
+	border: 1px solid $color-gray-13;
+	font-size: $font-size-med;
+	padding: 1rem;
+    overflow-x: auto;
+
+	code {
+		border: 0;
+	}
+}
+
+/**
+ * Code with languages associated with them
+ * 1) Override Prism sysles for code blocks with language
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+    font-family:monospace !important;
+}

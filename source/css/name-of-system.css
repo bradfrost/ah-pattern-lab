@@ -298,6 +298,31 @@ hr {
   background: #ddd;
   /* WebKit/Blink Browsers */ }
 
+code {
+  display: inline-block;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: .2rem .5rem;
+  line-height: 1.2;
+  font-size: .85rem; }
+
+pre {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  padding: 1rem;
+  overflow-x: auto; }
+  pre code {
+    border: 0; }
+
+/**
+ * Code with languages associated with them
+ * 1) Override Prism sysles for code blocks with language
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: monospace !important; }
+
 /*------------------------------------*    #TABLES
 \*------------------------------------*/
 /**
