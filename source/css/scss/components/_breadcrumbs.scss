@@ -46,5 +46,12 @@
  * Breadcrumbs link
  */
 .ah_c_breadcrumbs__link {
-	margin: 0 1rem;
+	margin: 0 0.5rem;
+
+	/**
+	 * Breadcrumbs link within first breadcrumb item
+	 */
+	.ah_c_breadcrumbs__item:first-child & {
+		margin-left: 0;
+	}
 }

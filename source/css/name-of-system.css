@@ -586,7 +586,12 @@ tr {
  * Breadcrumbs link
  */
 .ah_c_breadcrumbs__link {
-  margin: 0 1rem; }
+  margin: 0 0.5rem;
+  /**
+	 * Breadcrumbs link within first breadcrumb item
+	 */ }
+  .ah_c_breadcrumbs__item:first-child .ah_c_breadcrumbs__link {
+    margin-left: 0; }
 
 /*------------------------------------*    #BUTTONS
 \*------------------------------------*/
