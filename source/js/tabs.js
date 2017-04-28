@@ -12,6 +12,12 @@
 	var tabContainer = document.querySelectorAll('.ah_js_tabs');
 	var tabBtn = document.querySelectorAll('.ah_js_tab');
 	var tabContent = document.querySelectorAll('.ah_js_tabs-panel');
+	var tabsList = document.querySelectorAll('.ah_c_tabs-list');
+
+	for (i=0; i<tabsList.length; i++) {
+		var tabsListItem = tabsList[i].querySelector('.ah_c_tabs-list__item:first-child');
+		tabsListItem.classList.add('ah_is-active');
+	}
 
 	for (i=0; i<tabContainer.length; i++) {
 		var tabFirst = tabContainer[i].querySelector('.ah_js_tab:first-child');
@@ -29,6 +35,7 @@
 
 	function openTab(el) {
 		thisHref = el.getAttribute('href');
+		thisData = el.getAttribute('data-code-tabs');
 
 		var tabParent = el.parentNode.parentNode.parentNode;
 		var tabBtns = tabParent.querySelectorAll('.ah_js_tab');
@@ -54,8 +61,21 @@
 			}
 		}
 
+		var tabsList = document.querySelectorAll('.ah_js_tabs-list');
+		for (k=0; k<tabsList.length; k++) {
+			var tabsListItem = tabsList[k].querySelectorAll('.ah_c_tabs-list__item');
+			for (l=0; l<tabsListItem.length; l++) {
+				if (el.getAttribute('data-code-tabs') == tabsListItem[l].getAttribute('data-code-tabs')) {
+					var tabsItems = tabsList[k].querySelectorAll('.ah_c_tabs-list__item');
+					for (m=0; m<tabsItems.length; m++) {
+						tabsItems[m].classList.remove('ah_is-active');
+					}
+					tabsListItem[l].classList.add('ah_is-active');
+				}
+			}
+		}
+
 		document.querySelector(thisHref).classList.add('ah_is-active'); /* 2 */
 	}
-
 
 })();
