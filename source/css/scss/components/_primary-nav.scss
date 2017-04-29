@@ -177,6 +177,8 @@
  * Primary navigation sublink
  */
 .ah_c_primary-nav__sublink {
+	display: flex;
+	align-items: center;
 	padding: 0.5rem 0;
 
 	@media all and (min-width: $bp-xl) {
