@@ -1509,3 +1509,12 @@ tr {
   padding: 0;
   border: 0;
   clip: rect(1px, 1px, 1px, 1px); }
+
+/*------------------------------------*    #DISPLAY CLASSES
+\*------------------------------------*/
+/**
+ * Display block
+ * 1) Add display block by overriding
+ */
+.ah_u_display-block {
+  display: block !important; }
