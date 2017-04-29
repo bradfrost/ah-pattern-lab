@@ -40,7 +40,17 @@
 	 * 2) Get href of the clicked tab. Also get the data-code-tabs attribute.
 	 *    These are used to show and hide proper tab panel or tabs-list__items
 	 *    when the correlating variation is clicked on
-	 * 3)
+	 * 3) Remove active class from all tabs on click (click event above).
+	 *    Add active class to clicked tab.
+	 * 4) Select this tab's href and create new Href. If tab href exists on click,
+	 *    add active class to the tab.
+	 * 5) Select all tabs panels. On click remove all active classes from panels.
+	 *    Add class to panel associated with tab clicked on.
+	 * 6) For all tabs lists (list of code block tabs on styleguide), select all
+	 *    tab list items. If data-code-tabs matches between variation tab
+	 *    clicked and tabs list item, remove active classes from all tab list
+	 *    items and add active class to item with same data-code-tabs value.
+	 * 7) Add active class to tab whose href matches the correct tabs panel.
 	 */
 	function openTab(el) { /* 1 */
 		thisHref = el.getAttribute('href'); /* 2 */
@@ -50,41 +60,41 @@
 		var tabBtns = tabParent.querySelectorAll('.ah_js_tab');
 
 		for (j=0; j<tabBtns.length; j++) {
-			tabBtns[j].classList.remove('ah_is-active'); /* 2 */
+			tabBtns[j].classList.remove('ah_is-active'); /* 3 */
 		}
 
-		el.classList.add('ah_is-active'); /* 2 */
+		el.classList.add('ah_is-active'); /* 3 */
 
-		var newHref = document.querySelector(thisHref);
+		var newHref = document.querySelector(thisHref); /* 4 */
 		var newerHref = newHref.querySelector('.ah_js_tabs-panel');
-		var firstLink = newHref.querySelector('.ah_js_tab');
+		var firstLink = newHref.querySelector('.ah_js_tab'); /* 4 */
 		if (firstLink) {
-			firstLink.classList.add('ah_is-active');
+			firstLink.classList.add('ah_is-active'); /* 4 */
 		}
 
 		var tabsPanel = tabParent.querySelectorAll('.ah_js_tabs-panel');
 		for (j=0; j<tabsPanel.length; j++) {
-			tabsPanel[j].classList.remove('ah_is-active'); /* 2 */
+			tabsPanel[j].classList.remove('ah_is-active'); /* 5 */
 			if (newerHref) {
-				newerHref.classList.add('ah_is-active');
+				newerHref.classList.add('ah_is-active'); /* 5 */
 			}
 		}
 
 		var tabsList = document.querySelectorAll('.ah_js_tabs-list');
-		for (k=0; k<tabsList.length; k++) {
-			var tabsListItem = tabsList[k].querySelectorAll('.ah_js_tabs-list-item');
+		for (k=0; k<tabsList.length; k++) { /* 6 */
+			var tabsListItem = tabsList[k].querySelectorAll('.ah_js_tabs-list-item'); /* 6 */
 			for (l=0; l<tabsListItem.length; l++) {
-				if (el.getAttribute('data-code-tabs') == tabsListItem[l].getAttribute('data-code-tabs')) {
+				if (el.getAttribute('data-code-tabs') == tabsListItem[l].getAttribute('data-code-tabs')) { /* 6 */
 					var tabsItems = tabsList[k].querySelectorAll('.ah_js_tabs-list-item');
 					for (m=0; m<tabsItems.length; m++) {
-						tabsItems[m].classList.remove('ah_is-active');
+						tabsItems[m].classList.remove('ah_is-active');/* 6 */
 					}
-					tabsListItem[l].classList.add('ah_is-active');
+					tabsListItem[l].classList.add('ah_is-active');/* 6 */
 				}
 			}
 		}
 
-		document.querySelector(thisHref).classList.add('ah_is-active'); /* 2 */
+		document.querySelector(thisHref).classList.add('ah_is-active'); /* 7 */
 	}
 
 })();
