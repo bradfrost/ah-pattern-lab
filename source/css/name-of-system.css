@@ -1354,7 +1354,7 @@ tr {
     .ah_c_tabs__item:last-child .ah_c_tabs--vertical .ah_c_tabs__link {
       border-bottom: 0; }
     .ah_c_tabs--vertical .ah_c_tabs__link.ah_is-active {
-      font-weight: bold; }
+      background: #ddd; }
 
 /**
  * Tab Body
