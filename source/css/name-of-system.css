@@ -8,8 +8,8 @@
  * .....Headings
  * .....Forms
  * .....Defaults
- * COMPONENTS.............................Component styles
  * LAYOUT.................................Layout-specific styles
+ * COMPONENTS.............................Component styles
  * UTILITIES..............................Utility classes
  */
 /*------------------------------------*    #ABSTRACTS
@@ -45,6 +45,8 @@
  * BREAKPOINTS
  * Breakpoints................Global breakpoint definitions
  */
+/*------------------------------------*     #COLORS
+ \*------------------------------------*/
 /**
  * Brand Colors
  * 1) Main identifiable colors involved in creating the UI
@@ -82,6 +84,9 @@
 /* 2 */
 /*------------------------------------*    #BORDERS
 \*------------------------------------*/
+/**
+ * Border variables
+ */
 /*------------------------------------*    #ANIMATION
 \*------------------------------------*/
 /**
@@ -89,27 +94,45 @@
  */
 /*------------------------------------*    #BREAKPOINTS
 \*------------------------------------*/
+/**
+ * Breakpoints used in media queries
+ */
 /*------------------------------------*    #MIXINS
 \*------------------------------------*/
-/*------------------------------------*    #GLOBAL ELEMENTS
+/*------------------------------------*    #BASE
 \*------------------------------------*/
 /*------------------------------------*    #RESET
 \*------------------------------------*/
+/**
+ * Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/
+ */
 * {
   box-sizing: border-box; }
 
+/**
+ * 1) Zero out margins and padding for elements
+ */
 html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure {
   margin: 0;
   padding: 0; }
 
+/**
+ * 1) Set HTML5 elements to display: block
+ */
 header, footer, nav, section, article, hgroup, figure {
   display: block; }
 
 /*------------------------------------*    #BODY
 \*------------------------------------*/
+/**
+ * HTML base styles
+ */
 html {
   min-height: 100vh; }
 
+/**
+ * Body base styles
+ */
 body {
   background: #fff;
   font: 100%/1.5 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
@@ -121,6 +144,9 @@ body {
 
 /*------------------------------------*    #LINKS
 \*------------------------------------*/
+/**
+ * Link base styles
+ */
 a {
   color: #444;
   text-decoration: none;
@@ -131,11 +157,20 @@ a {
 
 /*------------------------------------*    #LISTS
 \*------------------------------------*/
+/**
+ * 1) List base styles
+ */
+/**
+  * Remove list styles from unordered and ordered lists
+  */
 ol, ul {
   list-style: none; }
 
 /*------------------------------------*    #HEADINGS
 \*------------------------------------*/
+/**
+ * Heading 1 base styles
+ */
 h1 {
   font-size: 2.25rem;
   line-height: 1;
@@ -144,6 +179,9 @@ h1 {
     h1 {
       font-size: 2.75rem; } }
 
+/**
+ * Heading 2 base styles
+ */
 h2 {
   font-size: 1.6em;
   line-height: 1.2;
@@ -152,6 +190,9 @@ h2 {
   margin-bottom: 0.5rem;
   word-wrap: break-word; }
 
+/**
+ * Heading 3 base styles
+ */
 h3 {
   font-size: 1.2em;
   line-height: 1.2;
@@ -160,6 +201,12 @@ h3 {
 
 /*------------------------------------*    #FORMS
 \*------------------------------------*/
+/**
+ * 1) Form element base styles
+ */
+/**
+  * Input placeholder text base styles
+  */
 ::-webkit-input-placeholder {
   color: #bbb; }
 
@@ -170,51 +217,81 @@ h3 {
 :-ms-input-placeholder {
   color: #bbb; }
 
+/**
+ * Fieldset base styles
+ */
 fieldset {
   border: 0;
   padding: 0;
   margin: 0; }
 
+/**
+ * Legend base styles
+ */
 legend {
   text-transform: lowercase;
   margin-bottom: 0.25em; }
 
+/**
+ * Label base styles
+ */
 label {
   display: block;
   padding-bottom: 0.25rem; }
 
+/**
+ * Add font size 100% of form element and margin 0 to these elements
+ */
 button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0; }
 
+/**
+ * Text area base styles
+ */
 textarea {
   resize: none; }
 
+/**
+ * Input  and text area base styles
+ */
 input, textarea {
   width: 100%;
   border: 1px solid #808080;
   padding: 0.5rem 0.65rem; }
 
+/**
+ * Remove webkit appearance styles from these elements
+ */
 input[type=text], input[type=search], input[type=url], input[type=number], textarea {
   -webkit-appearance: none; }
 
+/**
+ * Checkbox and radio button base styles
+ */
 input[type="checkbox"],
 input[type="radio"] {
   width: auto;
   margin-right: 0.3em; }
 
+/**
+ * Search input base styles
+ */
 input[type="search"] {
   -webkit-appearance: none;
   border-radius: 0; }
 
+/**
+ * Remove webkit appearance styles from search input cancel and decoration
+ */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
  * Select
- * 1) Remove default styling for Internet Explorer
+ * 1) Remove default styling
  */
 select {
   display: block;
@@ -231,7 +308,13 @@ select {
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTIgMTEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEyIDExOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgZmlsbD0iIzgwODA4MCI+PHBhdGggZD0iTTIsNGw0LDRsNC00SDJ6Ii8+PC9zdmc+);
   background-position: calc(100% - 0.3rem) 50%;
   background-size: 16px 16px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  /**
+     * 1) Remove IE select arrow
+     */
+  /**
+     * 1) Style IE value selector
+     */ }
   select:focus {
     outline: 0;
     border-color: #808080; }
@@ -265,15 +348,25 @@ button, input[type=submit] {
 
 /*------------------------------------*    #MEDIA
 \*------------------------------------*/
+/**
+ * Responsive image styling
+ * 1) Allows for images to flex with varying screen size
+ */
 img {
   max-width: 100%;
   height: auto; }
 
 /*------------------------------------*    #TEXT
 \*------------------------------------*/
+/**
+ * Paragraph base styles
+ */
 p {
   margin-bottom: 1rem; }
 
+/**
+ * Blockquote base styles
+ */
 blockquote {
   font-style: italic;
   border-left: 1px solid #808080;
@@ -281,6 +374,9 @@ blockquote {
   padding-left: 1rem;
   margin-bottom: 1rem; }
 
+/**
+ * Horizontal rule base styles
+ */
 hr {
   border: 0;
   height: 1px;
@@ -298,6 +394,9 @@ hr {
   background: #ddd;
   /* WebKit/Blink Browsers */ }
 
+/**
+ * Code base styles
+ */
 code {
   display: inline-block;
   background: #f9f9f9;
@@ -306,12 +405,18 @@ code {
   line-height: 1.2;
   font-size: .85rem; }
 
+/**
+ * Preformatted text base styles
+ */
 pre {
   background: #f9f9f9;
   border: 1px solid #ddd;
   font-size: 1rem;
   padding: 1rem;
-  overflow-x: auto; }
+  overflow-x: auto;
+  /**
+	 * Remove border from code within preformatted text block
+	 */ }
   pre code {
     border: 0; }
 
@@ -578,7 +683,10 @@ tr {
     top: 0;
     right: -10px; }
   .ah_c_breadcrumbs__item:last-child {
-    margin-right: 0; }
+    margin-right: 0;
+    /**
+		 * Remove last breadcrumb item icon after
+		 */ }
     .ah_c_breadcrumbs__item:last-child:after {
       display: none; }
 
@@ -636,7 +744,10 @@ tr {
     .ah_c_btn-group .ah_c_btn:last-child {
       margin-right: 0; }
   .ah_c_btn-group .ah_c_btn {
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    /**
+		 * Remove right margin on last button group button
+		 */ }
     .ah_c_btn-group .ah_c_btn:last-child {
       margin-right: 0; }
   .ah_c_btn-group--responsive .ah_c_btn {
@@ -645,7 +756,10 @@ tr {
     @media all and (min-width: 24em) {
       .ah_c_btn-group--responsive .ah_c_btn {
         margin-right: 0.5rem;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        /**
+			 * Remove right margin on last responsive button group button
+			 */ }
         .ah_c_btn-group--responsive .ah_c_btn:last-child {
           margin-right: 0; } }
 
@@ -656,8 +770,8 @@ tr {
   padding: .375rem .75rem; }
 
 /*
- * Inner container of the buttonTag
- * Allows for display flex on a button, since that is a bug with flexbox
+ * Inner container of the buton
+ * Allows for display flex on a button
  */
 .ah_c_btn__inner {
   display: flex;
@@ -853,7 +967,10 @@ tr {
  * 1) Contains the primary navigation and other possible patterns
  */
 .ah_c_header__nav-container {
-  display: none; }
+  display: none;
+  /**
+	 * Header navigation conntainer within vertical header
+	 */ }
   @media all and (min-width: 70em) {
     .ah_c_header__nav-container {
       display: block;
@@ -1030,7 +1147,10 @@ tr {
 	 */ }
   @media all and (min-width: 70em) {
     .ah_c_primary-nav__item {
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      /**
+		 * Remove margin right from last primary navigation item on large screens
+		 */ }
       .ah_c_primary-nav__item:last-child {
         margin-right: 0; } }
   .ah_c_header--vertical .ah_c_primary-nav__item {
@@ -1170,9 +1290,6 @@ tr {
 	 * Primary navigation icon within vertical header
 	 */
   /**
-	 * Primary navigation icon within vertical header
-	 */
-  /**
 	 * Primary navigation icon within active link
 	 */
   /**
@@ -1181,8 +1298,6 @@ tr {
   /**
 	 * Primary navigation icon within hovered/focused primary navigation link
 	 */ }
-  .ah_c_header--vertical .ah_c_primary-nav__icon {
-    margin-left: auto; }
   .ah_c_header--vertical .ah_c_primary-nav__icon {
     margin-left: auto; }
   .ah_c_primary-nav__item.ah_is-active .ah_c_primary-nav__icon {

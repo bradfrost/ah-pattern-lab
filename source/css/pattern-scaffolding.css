@@ -62,44 +62,6 @@
   line-height: 1;
 }
 
-.sg-pattern-example > .c-icon {
-    height: 16px;
-    width: 16px;
-}
-
-.sg-pattern-example > .l-container {
-    margin: 0;
-}
-
-.sg-pattern-example > .l-container {
-    margin: 0;
-}
-
-.sg-pattern-example .c-list-settings__panel {
-    position: relative;
-    left: 2rem;
-    top: -1.5rem;
-}
-
-.sg-pattern-example > .c-list-item {
-    font-size: 1.85rem;
-}
-
-.sg-pattern-example > .c-alert {
-    position: relative;
-    margin-bottom: 1rem;
-}
-
-.sg-pattern-example > .ah_c_alert:last-child {
-    margin-bottom: 0;
-}
-
-.ah_c_alert {
-    position: static;
-    margin: 0;
-    width: 100%;
-}
-
 /**
  * Icon grid
  */
@@ -140,14 +102,20 @@
     width: 16px;
 }
 
+/**
+* For placeholder only block
+* 1) Used for placeholder blocks for layouts
+*/
 .fpo-block {
     padding: 1rem;
     background: #f5f5f5;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 1rem;
 }
 
+/**
+* Dark for placeholder only block
+*/
 .fpo-block--dark {
     background: #808080;
 }
@@ -249,7 +217,7 @@
 }
 
 /**
- * cap the min
+ * Vertical header in pattern example at large screens
  */
  @media all and (min-width: 70em) {
     .sg-pattern-example .ah_c_header--vertical {

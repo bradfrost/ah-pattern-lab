@@ -36,6 +36,9 @@
 	&:last-child {
 		margin-right: 0;
 
+		/**
+		 * Remove last breadcrumb item icon after
+		 */
 		&:after {
 			display: none;
 		}

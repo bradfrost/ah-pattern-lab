@@ -32,6 +32,10 @@
  * Breakpoints................Global breakpoint definitions
  */
 
+ /*------------------------------------*\
+     #COLORS
+ \*------------------------------------*/
+ 
 /**
  * Brand Colors
  * 1) Main identifiable colors involved in creating the UI
@@ -136,6 +140,10 @@ $space-bullet-offset: 1.6rem; /* 2 */
 /*------------------------------------*\
     #BORDERS
 \*------------------------------------*/
+
+/**
+ * Border variables
+ */
 $border-radius: 4px;
 
 
@@ -145,6 +153,7 @@ $border-radius: 4px;
 /*------------------------------------*\
     #ANIMATION
 \*------------------------------------*/
+
 /**
  * Transition Speed
  */
@@ -159,6 +168,10 @@ $anim-ease: ease-in-out;
 /*------------------------------------*\
     #BREAKPOINTS
 \*------------------------------------*/
+
+/**
+ * Breakpoints used in media queries
+ */
 $bp-small: 24em;
 $bp-small-2: 29.75em;
 $bp-small-3: 39.8em;

@@ -50,6 +50,9 @@
 	.ah_c_btn-group & {
 		margin-right: 0.5rem;
 
+		/**
+		 * Remove right margin on last button group button
+		 */
 		&:last-child {
 			margin-right: 0;
 		}
@@ -66,6 +69,9 @@
 			margin-right: 0.5rem;
 			margin-bottom: 0;
 
+			/**
+			 * Remove right margin on last responsive button group button
+			 */
 			&:last-child {
 				margin-right: 0;
 			}
@@ -81,8 +87,8 @@
 }
 
 /*
- * Inner container of the buttonTag
- * Allows for display flex on a button, since that is a bug with flexbox
+ * Inner container of the buton
+ * Allows for display flex on a button
  */
 .ah_c_btn__inner {
 	display: flex;
@@ -122,6 +128,7 @@
 /*------------------------------------*\
     #TEXT BUTTON
 \*------------------------------------*/
+
 /**
  * 1) Button that is text only and doesn't contain a border or fill.
  */
