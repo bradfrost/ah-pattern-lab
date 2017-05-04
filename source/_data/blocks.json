@@ -7,6 +7,10 @@
         "title" : "Tile Title",
         "description" : "This is a description of the tile."
     },
+    "media" : {
+        "src" : "http://i.pravatar.cc/64",
+        "description" : "Hello My Name is John Doe."
+    },
     "cardHeader" : {
         "htmlText" : "Card header"
     },

@@ -897,6 +897,16 @@ tr {
   .ah_c_card:hover .ah_c_card__icon, .ah_c_card:focus .ah_c_card__icon {
     transform: translate(3px); }
 
+/*------------------------------------*    #MEDIA BLOCK
+\*------------------------------------*/
+/**
+ * 
+ */
+.ah_c_media__image {
+  display: block;
+  float: left;
+  margin-right: 1rem; }
+
 /*------------------------------------*    #FOOTER NAVIGATION
 \*------------------------------------*/
 /**
